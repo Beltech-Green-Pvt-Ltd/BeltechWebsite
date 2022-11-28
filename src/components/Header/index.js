@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { HeaderContainer, LogoContainer, MainContainer,Container, LogoText, Image, MenuContainer,MenuItem, Linked } from "./style";
+import { Link, useMatch } from "react-router-dom";
+import { HeaderContainer, LogoContainer, MainContainer,Container, LogoText, Image, MenuContainer,MenuItem, Linked, UnderLine } from "./style";
 import logo from '../../assets/Beltech.png';
 
 const Header = () => {
+    const match = useMatch("/career");
+
     return (
         <MainContainer>
             <Container>
@@ -16,6 +18,7 @@ const Header = () => {
                 <MenuContainer>
                     <MenuItem>
                         <Linked to="/">Home</Linked>
+                        {useMatch('/') ? (<UnderLine />): (<></>)}
                     </MenuItem>
                     <MenuItem>
                         <Linked to="/">Product</Linked>
@@ -27,10 +30,12 @@ const Header = () => {
                         <Linked to="/">Impact</Linked>
                     </MenuItem>
                     <MenuItem>
-                        <Linked to="carrer">Carrer</Linked>
+                        <Linked to="career">Carrer</Linked>
+                        {useMatch('/career') ? (<UnderLine />): (<></>)}
                     </MenuItem>
                     <MenuItem>
-                        <Linked to="/">Team</Linked>
+                        <Linked to="/team">Team</Linked>
+                        {useMatch('/team') ? (<UnderLine />): (<></>)}
                     </MenuItem>
                     <MenuItem>
                         <Linked to="/">Contact Us</Linked>
