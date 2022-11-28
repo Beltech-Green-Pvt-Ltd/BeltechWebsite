@@ -8,6 +8,7 @@ import Header from "./components/Header";
 //Importing Component
 const Home = lazy(() => import("./container/HomePage"));
 const Carrer = lazy(() => import("./container/CarrerPage"));
+const Team = lazy(() => import("./container/TeamPage/"));
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
       <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/carrer" element={<Carrer />} />
+          <Route path="/career" element={<Carrer />} />
+          <Route path="/team" element={<Team />}/>
       </Routes>
       </Suspense>
     </Router>
