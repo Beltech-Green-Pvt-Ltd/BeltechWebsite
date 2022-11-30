@@ -43,6 +43,6 @@ export const Image = styled.img`
 `;
 
 export const Text = styled.div`
-    font-size: 27px;
+    font-size: 24px;
     margin-left: 25px;
 `;

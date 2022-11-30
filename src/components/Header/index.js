@@ -38,7 +38,7 @@ const Header = () => {
                         {useMatch('/team') ? (<UnderLine />): (<></>)}
                     </MenuItem>
                     <MenuItem>
-                        <Linked to="/">Contact Us</Linked>
+                        <Linked to="/contactus">Contact Us</Linked>
                     </MenuItem>
                 </MenuContainer>
             </Container>

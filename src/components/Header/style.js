@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Colors from "../../styles/color";
 
 export const MainContainer = styled.div`
     display: flex;
@@ -65,4 +66,10 @@ export const Linked = styled(Link)`
     @media only screen and (max-width: 600px) {
         font-size: 14px;
     }
+`;
+
+export const UnderLine = styled.div`
+    background-color: ${Colors.primaryColor};
+    height: 3px;
+    width: 100%;
 `;
