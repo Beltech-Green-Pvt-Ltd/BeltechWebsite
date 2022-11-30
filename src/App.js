@@ -4,6 +4,8 @@ import logo from "./logo.svg";
 import "./App.css";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ContactUs from "./container/ContactUs";
 
 //Importing Component
 const Home = lazy(() => import("./container/HomePage"));
@@ -19,8 +21,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/career" element={<Carrer />} />
           <Route path="/team" element={<Team />}/>
+          <Route path="/contactus" element={<ContactUs />}/>
       </Routes>
       </Suspense>
+      <Footer />
     </Router>
   );
 }
