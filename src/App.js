@@ -11,6 +11,7 @@ import ContactUs from "./container/ContactUs";
 const Home = lazy(() => import("./container/HomePage"));
 const Carrer = lazy(() => import("./container/CarrerPage"));
 const Team = lazy(() => import("./container/TeamPage/"));
+const Product = lazy(() => import("./container/ProductPage"));
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/career" element={<Carrer />} />
           <Route path="/team" element={<Team />}/>
           <Route path="/contactus" element={<ContactUs />}/>
+          <Route path="/product" element={<Product />}/>
       </Routes>
       </Suspense>
       <Footer />
