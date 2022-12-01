@@ -21,7 +21,8 @@ const Header = () => {
                         {useMatch('/') ? (<UnderLine />): (<></>)}
                     </MenuItem>
                     <MenuItem>
-                        <Linked to="/">Product</Linked>
+                        <Linked to="/product">Product</Linked>
+                        {useMatch('/product') ? (<UnderLine />) : (<></>)}
                     </MenuItem>
                     <MenuItem>
                         <Linked to="/">About us</Linked>
