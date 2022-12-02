@@ -1,10 +1,12 @@
-import React from "react";
-import { Link, useMatch } from "react-router-dom";
+import React,{useState} from "react";
+import { Link, useMatch, Location, useLocation } from "react-router-dom";
 import { HeaderContainer, LogoContainer, MainContainer,Container, LogoText, Image, MenuContainer,MenuItem, Linked, UnderLine } from "./style";
 import logo from '../../assets/Beltech.png';
 
 const Header = () => {
     const match = useMatch("/career");
+    const active = useState(-1);
+    const location = useLocation();
 
     return (
         <MainContainer>
@@ -18,17 +20,19 @@ const Header = () => {
                 <MenuContainer>
                     <MenuItem>
                         <Linked to="/">Home</Linked>
-                        {useMatch('/') ? (<UnderLine />): (<></>)}
+                        {(useMatch('/') && !(location.hash)) ? (<UnderLine />): (<></>)}
                     </MenuItem>
                     <MenuItem>
                         <Linked to="/product">Product</Linked>
                         {useMatch('/product') ? (<UnderLine />) : (<></>)}
                     </MenuItem>
                     <MenuItem>
-                        <Linked to="/">About us</Linked>
+                        <Linked to="/#aboutUs">About us</Linked>
+                        {(location.hash === "#aboutUs") ? (<UnderLine />) : (<></>)}
                     </MenuItem>
                     <MenuItem>
-                        <Linked to="/">Impact</Linked>
+                        <Linked to="/#impact">Impact</Linked>
+                        {(location.hash === "#impact") ? (<UnderLine />): (<></>)}
                     </MenuItem>
                     <MenuItem>
                         <Linked to="career">Carrer</Linked>
