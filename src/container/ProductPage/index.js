@@ -9,17 +9,17 @@ import {
 } from "./style";
 import Product1 from "../../components/OurProducts/Product1";
 import TrafficManagement from "../../components/TrafficManagement";
+import TourismPlatform from "../../components/TourismPlatform";
 import SecurityPlatform from "../../components/SecurityPlatform";
 import { Element } from "react-scroll";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Colors from "../../styles/color";
 
 const ProductPage = () => {
   const [active, setActive] = useState(0);
-
   const location = useLocation();
-
+  
   useEffect(() => {
     if (location.hash) {
       let elem = document.getElementById(location.hash.slice(1));
@@ -43,7 +43,7 @@ const ProductPage = () => {
   // For activating the link when user is scorlling
   useEffect(() => {
 
-    const ScrollFunction = () => {
+    const ScrollFunction = (active) => {
     const observable = {
       trafficManagement: document.querySelector("#trafficManagement"),
       security: document.querySelector("#security"),
@@ -61,22 +61,22 @@ const ProductPage = () => {
       pos.trafficManagement.top < window.innerHeight &&
       pos.trafficManagement.bottom >= 0
     ) {
-      setActive(0);
+        setActive(0);
     } else if (
       pos.security.top < window.innerHeight &&
       pos.security.bottom >= 0
     ) {
-      setActive(1);
+        setActive(1);
     } else if (
       pos.smartcity.top < window.innerHeight &&
       pos.smartcity.bottom >= 0
     ) {
-      setActive(2);
+        setActive(2);
     } else if (
       pos.tourismplatform.top < window.innerHeight &&
-      pos.smartcity.bottom >= 0
+      pos.tourismplatform.bottom >= 0
     ) {
-      setActive(3);
+        setActive(3);
     }
   }
 
@@ -121,12 +121,12 @@ const ProductPage = () => {
         <div name="security" id="security">
           <SecurityPlatform/>
         </div>
-        <Element name="smartcity" id="smartcity">
-          <Product1 />
-        </Element>
-        <Element name="tourismplatform" id="tourismplatform">
-          <Product1 />
-        </Element>
+        <div name="smartcity" id="smartcity">
+          {/* <Product1 /> */}
+        </div>
+        <div name="tourismplatform" id="tourismplatform">
+          <TourismPlatform />
+        </div>
       </Container>
     </MainContainer>
   );
