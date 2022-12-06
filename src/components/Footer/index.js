@@ -33,40 +33,42 @@ const Footer = () => {
         </BeltechLogoContainer>
         <FooterMenuContainer>
           <MenuContainer>
-            <MenuItem>
+            <MenuItem to="/">
                 Home
             </MenuItem>
-            <MenuItem>
+            <MenuItem to="/product">
                 Products
             </MenuItem>
-            <MenuItem>
+            <MenuItem to="/#impact">
                 Impact
             </MenuItem>
-            <MenuItem>
+            <MenuItem to="/team">
                 Team
             </MenuItem>
-            <MenuItem>
-                Collaborate
+            <MenuItem to="/#aboutUs">
+                AboutUs
             </MenuItem>
-            <MenuItem>
+            <MenuItem to="/contactus">
                 Contact Us
             </MenuItem>
           </MenuContainer>
           <FollowUsContainer>
             <FollowUsText>Follow us</FollowUsText>
             <FollowUsImageContainer>
-                <Image src={linkedin}/>
-                <Image src={instagram}/>
+            <a href="https://www.linkedin.com/company/beltechai/mycompany/" target="_blank">
+            <Image src={linkedin}/>
+            </a> 
+            <a href="https://angel.co/company/beltechai" target="_blank">
                 <Image src={angellist}/>
+            </a>
             </FollowUsImageContainer>
           </FollowUsContainer>
         </FooterMenuContainer>
         <Line></Line>
         <TermAndConditionContainer>
             <TNC>
-                <TNCLink>{`Terms & conditions`}</TNCLink>
-                <TNCLink>Privacy policy</TNCLink>
-                <TNCLink>Cookies policy</TNCLink>
+                <TNCLink to="/T&C">{`Terms & conditions`}</TNCLink>
+                <TNCLink to="/privacyPolicy">Privacy policy</TNCLink>
             </TNC>
             <CopyRightText>Beltech Artficial Intelligence Pvt. Ltd. 2021</CopyRightText>
         </TermAndConditionContainer>
