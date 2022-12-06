@@ -44,6 +44,7 @@ const Header = () => {
                     </MenuItem>
                     <MenuItem>
                         <Linked to="/contactus">Contact Us</Linked>
+                        {useMatch('/contactus') ? (<UnderLine />): (<></>)}
                     </MenuItem>
                 </MenuContainer>
             </Container>
