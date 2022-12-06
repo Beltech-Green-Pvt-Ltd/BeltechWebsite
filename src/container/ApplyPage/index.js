@@ -8,6 +8,7 @@ import {
   Circle,
   FormContainer,
 } from "./style";
+import Spinner from "../../components/Spinner";
 
 const ApplyPage = () => {
   return (
@@ -28,7 +29,7 @@ const ApplyPage = () => {
             marginheight="0"
             marginwidth="0"
           >
-            Loading…
+            <Spinner />
           </iframe>
         </FormContainer>
       </Container>
