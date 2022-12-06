@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
-  height: 427px;
+  height: 400px;
 `;
 
 export const Container = styled.div`
@@ -17,7 +17,7 @@ export const BeltechLogoContainer = styled.div`
     display: flex;
     padding-left: 97px;
     padding-right: 97px;
-    padding-top: 95px;
+    padding-top: 65px;
     align-items: flex-start;
 `;
 
@@ -37,7 +37,7 @@ export const FooterMenuContainer = styled.div`
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -70px
+    top: -50px
 `;
 
 export const MenuContainer = styled.div`
@@ -52,13 +52,13 @@ export const MenuItem = styled(Link)`
     text-decoration: none;
     color: white;
     padding-right: 41px;
-    font-size: 21px;
+    font-size: 18px;
 `;
 
 export const FollowUsText = styled.div`
     color: white;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
 `;
 
 export const FollowUsImageContainer = styled.div`
