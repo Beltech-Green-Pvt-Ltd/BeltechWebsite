@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import ContactUs from "./container/ContactUs";
 import ScrollToTop from "./components/ScrollToTop";
 import SpinnerDiv from "./components/LoadingContainer";
+import JobPage from "./container/JobPage";
 
 //Importing Component
 const Home = lazy(() => import("./container/HomePage"));
@@ -25,11 +26,13 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/career" element={<Carrer />} />
-          <Route path="/job/:jobId" element={<h1>jobPage</h1>} />
+          <Route path="/job/:jobId" element={<JobPage />} />
           <Route path="/team" element={<Team />}/>
           <Route path="/contactus" element={<ContactUs />}/>
           <Route path="/product" element={<Product />}/>
           <Route path="/apply" element={<Apply />}/>
+          <Route path="/privacyPolicy" element={<h1>Privacy</h1>}/>
+          <Route path="/T&C" element={<h1>Terms and condition</h1>}/>
       </Routes>
       </Suspense>
       <Footer />
