@@ -48,8 +48,9 @@ export const Button = styled.button`
 
 export const JobListingContainer = styled.div`
   margin-top: 50px;
-  max-width: 400px;
+  width: 400px;
   background: #ffffff;
+  height: fit-content;
 `;
 
 export const JobListContainer = styled.div`
@@ -73,7 +74,8 @@ export const JobsCardContainer = styled.div`
     padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-    padding-right: 150px;
+    padding-right: 50px;
+    cursor: pointer;
 `;
 
 export const JobsName = styled.h2`

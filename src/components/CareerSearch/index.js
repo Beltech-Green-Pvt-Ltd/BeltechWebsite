@@ -85,7 +85,7 @@ const CarrerSearch = () => {
                 return <JobsCard data={data} key={index} setSelectedJob={setSelectedJob} selectedJob={selectedJob} index={index}/>;
             })}
           </JobListingContainer>
-          <JobDescription data={data} selectedJob={selectedJob}/>
+          <JobDescription data={data} selectedJob={selectedJob} setSelectedJob={setSelectedJob}/>
         </JobsFlex>
       </CarrerSearchContainer>
     </CarrerMainSearchContainer>
