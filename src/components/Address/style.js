@@ -8,9 +8,6 @@ export const HeadingText = styled.div`
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-
-  /* identical to box height */
-  letter-spacing: -0.3px;
 `;
 
 export const CorporateOffice = styled.div`
@@ -64,8 +61,5 @@ export const ContactText = styled.div`
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-
-  /* identical to box height */
-
   color: #05052c;
 `;
