@@ -8,10 +8,12 @@ export const JobDescriptionDetailsContainer = styled.div`
   margin-top: 50px;
   background-color: white;
   border-radius: 8px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
 `;
 
 export const NoJobDescriptionDetailsContainer = styled.div`
-  min-height: 1000px;
+  min-height: 800px;
   width: 816px;
   margin-left: 20px;
   margin-top: 50px;
@@ -39,6 +41,8 @@ export const NoJobText = styled.div`
 
 export const HeaderContainer = styled.div`
   padding: 48px 48px 0px 48px;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const JobsName = styled.div`
@@ -50,14 +54,13 @@ export const JobsName = styled.div`
 
 export const ApplyContainer = styled.div`
   padding: 0px 48px 0px 48px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 export const ApplyButton = styled(Link)`
-  width: 125.42px;
-  height: 45px;
   background: #006ae9;
+  padding: 10px 15px 10px 15px;
   border-radius: 8px;
   border: none;
   color: white;
@@ -85,23 +88,36 @@ export const JobHeadings = styled.div`
 `;
 
 export const PointsContainer = styled.div`
-    margin-top: 12px;
+    margin-top: 17px;
 `;
 
 export const Point = styled.div`
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     font-size: 14px;
 `;
 
 export const PointText = styled.div`
-    margin-left: 12px;
+    margin-left: 14px;
 `;
 
 export const Circle = styled.div`
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 5px;
     background: #FFB600;;
+`;
+
+export const JobsNameContainer = styled(Link)`
+  display: flex;
+  text-decoration: none;
+`;
+
+export const LinkIcon = styled.img`
+  margin-left: 5px;
+`;
+
+export const CrossIcon = styled.img`
+  cursor: pointer;
 `;

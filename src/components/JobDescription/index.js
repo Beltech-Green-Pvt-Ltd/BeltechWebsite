@@ -16,11 +16,16 @@ import {
   PointsContainer,
   Point,
   Circle,
-  PointText
+  PointText,
+  JobsNameContainer,
+  LinkIcon,
+  CrossIcon,
 } from "./style";
 import JobSearchIcon from "../../assets/NoJobSelected.png";
+import LinkSvg from "../../assets/Link.svg";
+import CrossSvg from '../../assets/cross.svg';
 
-const JobDescription = ({ data, selectedJob }) => {
+const JobDescription = ({ data, selectedJob, setSelectedJob }) => {
   if (selectedJob === null) {
     return (
       <NoJobDescriptionDetailsContainer>
@@ -36,53 +41,56 @@ const JobDescription = ({ data, selectedJob }) => {
   return (
     <JobDescriptionDetailsContainer>
       <HeaderContainer>
-        <JobsName>{data[selectedJob].position}</JobsName>
+        <JobsNameContainer to={`/job/${data[selectedJob].jobId}`} target="_blank" rel="noopener noreferrer">
+          <JobsName>{data[selectedJob].position}</JobsName>
+          <LinkIcon src={LinkSvg}/>
+        </JobsNameContainer>
+        <CrossIcon src={CrossSvg} onClick={() => setSelectedJob(null)}/>
       </HeaderContainer>
       <ApplyContainer>
-        <ApplyButton to="/apply">Apply</ApplyButton>
+        <ApplyButton to="/apply" target="_blank" rel="noopener noreferrer">Apply</ApplyButton>
       </ApplyContainer>
       <UnderLine />
       <DescriptionContainer></DescriptionContainer>
       <RoleResponsibiltiesContainer>
         <JobHeadings>Roles and Responsibilties</JobHeadings>
         <PointsContainer>
-        {data[selectedJob].Responsibilities.map((data,index) => {
+          {data[selectedJob].Responsibilities.map((data, index) => {
             return (
-                <Point>
-                    <Circle />
-                    <PointText>{data}</PointText>
-                </Point>
+              <Point>
+                <Circle />
+                <PointText>{data}</PointText>
+              </Point>
             );
-        })}
+          })}
         </PointsContainer>
       </RoleResponsibiltiesContainer>
       <RoleResponsibiltiesContainer>
         <JobHeadings>Must Have</JobHeadings>
         <PointsContainer>
-        {data[selectedJob].MustHave.map((data,index) => {
+          {data[selectedJob].MustHave.map((data, index) => {
             return (
-                <Point>
-                    <Circle />
-                    <PointText>{data}</PointText>
-                </Point>
+              <Point>
+                <Circle />
+                <PointText>{data}</PointText>
+              </Point>
             );
-        })}
+          })}
         </PointsContainer>
       </RoleResponsibiltiesContainer>
       <RoleResponsibiltiesContainer>
         <JobHeadings>Good to have</JobHeadings>
         <PointsContainer>
-        {data[selectedJob].NiceToHave.map((data,index) => {
+          {data[selectedJob].NiceToHave.map((data, index) => {
             return (
-                <Point>
-                    <Circle />
-                    <PointText>{data}</PointText>
-                </Point>
+              <Point>
+                <Circle />
+                <PointText>{data}</PointText>
+              </Point>
             );
-        })}
+          })}
         </PointsContainer>
       </RoleResponsibiltiesContainer>
-
     </JobDescriptionDetailsContainer>
   );
 };
