@@ -24,8 +24,8 @@ export const HeadingSubContainer = styled.div`
 `;
 
 export const Circle = styled.div`
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50px;
   background-color: #ffc800;
   position: absolute;
@@ -35,7 +35,7 @@ export const Circle = styled.div`
 `;
 
 export const HeadingText = styled.h1`
-  font-size: 60px;
+  font-size: 47px;
 `;
 
 export const CoreTeamContainer = styled.div`
@@ -47,8 +47,8 @@ export const CoreTeamContainer = styled.div`
 `;
 
 export const TeamProfileContainer = styled.div`
-  width: 368px;
-  height: 459px;
+  width: 340px;
+  height: 400px;
   left: 100px;
   top: 396px;
   background: #ffffff;
@@ -68,13 +68,13 @@ export const TeamProfiles = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 90px;
 `;
 
 export const Name = styled.div`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 29px;
   letter-spacing: -0.3px;
@@ -83,7 +83,7 @@ export const Name = styled.div`
 
 export const Designation = styled.div`
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   letter-spacing: -0.3px;
   margin-top: 21px;
@@ -116,7 +116,7 @@ export const AdvisoryTeamCard = styled.div`
 
 export const AdvisoryTeamImage = styled.img`
   width: 230px;
-  height: 340px;
+  height: 300px;
   position: relative;
   left: 20px;
   bottom: 70px;
