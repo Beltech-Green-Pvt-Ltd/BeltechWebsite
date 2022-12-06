@@ -23,26 +23,25 @@ export const HeadingSubContainer = styled.div`
 `;
 
 export const Circle = styled.div`
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50px;
   background-color: #ffc800;
   position: absolute;
-  top: 19%;
+  top: 22%;
   left: -10%;
   z-index: -1;
 `;
 
 export const HeadingText = styled.h1`
   font-weight: 700;
-  font-size: 60px;
+  font-size: 47px;
   line-height: 72px;
-  letter-spacing: -0.3px;
   color: #130f26;
 `;
 
 export const ContactContainer = styled.div`
-  margin-top: 123px;
+  margin-top: 70px;
   display: flex;
   justify-content: space-around;
 `;
