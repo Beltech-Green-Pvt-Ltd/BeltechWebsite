@@ -12,7 +12,6 @@ import TrafficManagement from "../../components/TrafficManagement";
 import TourismPlatform from "../../components/TourismPlatform";
 import SecurityPlatform from "../../components/SecurityPlatform";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 import Colors from "../../styles/color";
 
 const ProductPage = () => {

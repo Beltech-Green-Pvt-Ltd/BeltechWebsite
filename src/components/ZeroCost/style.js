@@ -22,11 +22,11 @@ export const Container = styled.div`
 
 export const HeadingText = styled.div`
     color: white;
-    font-size: 72px;
+    font-size: 63px;
     font-weight: 800;
 `;
 
 export const SubHeadingText = styled.div`
     color: white;
-    font-size: 48px;
+    font-size: 43px;
 `;

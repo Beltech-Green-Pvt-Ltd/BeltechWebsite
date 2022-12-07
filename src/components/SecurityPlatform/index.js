@@ -10,7 +10,7 @@ import {
   ContentContainer2,
   GraphContentContainer,
   TextContentContainer,
-  Image,
+  Video,
   TextContentHeading,
   TextContentSubHeading,
   BulletPoint,
@@ -26,6 +26,9 @@ import {
   AnalysisText
 } from "./style";
 import Fight from '../../assets/Fight.png';
+import Security from '../../assets/video/security.mp4';
+import WomanSecurity from '../../assets/video/women_security.mp4';
+import CriminalDetection from '../../assets/video/criminalDetection.mp4';
 
 const SecurityPlatform = () => {
   return (
@@ -39,7 +42,7 @@ const SecurityPlatform = () => {
       <SecurityContentContainer>
           <ContentContainer2>
             <GraphContentContainer>
-              <Image src={Fight} />
+              <Video src={Security} controls autoPlay muted loop/>
             </GraphContentContainer>
             <TextContentContainer>
               <TextContentHeading>
@@ -70,7 +73,7 @@ const SecurityPlatform = () => {
           <ContentContainer>
             <GraphContentContainer>
               <BackGroundCircle1 />
-              <Image src={Fight} />
+              <Video src={CriminalDetection} controls autoPlay muted/>
             </GraphContentContainer>
             <TextContentContainer>
               <TextContentHeading>Criminal Detection</TextContentHeading>
@@ -99,7 +102,7 @@ const SecurityPlatform = () => {
           <ContentContainer2>
             <GraphContentContainer>
               <BackGroundCircle />
-              <Image src={Fight} />
+              <Video src={WomanSecurity} controls autoPlay muted loop/>
             </GraphContentContainer>
             <TextContentContainer>
               <TextContentHeading>Women Safty</TextContentHeading>
@@ -128,7 +131,7 @@ const SecurityPlatform = () => {
           <ContentContainer>
             <GraphContentContainer>
               <BackGroundCircle1 />
-              <Image src={Fight} />
+              <Video src={Fight} controls/>
             </GraphContentContainer>
             <TextContentContainer>
               <TextContentHeading>Intrusion Detection</TextContentHeading>

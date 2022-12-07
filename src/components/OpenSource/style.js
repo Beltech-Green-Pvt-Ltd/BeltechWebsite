@@ -19,14 +19,14 @@ export const Container = styled.div`
 `;
 
 export const HeadingText = styled.div`
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 40px;
     color: #000A55;
     font-weight: 700;
 `;
 
 export const SubHeadingText = styled.div`
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     color: ${Colors.primaryColor};
     margin-bottom: 9px;
@@ -34,5 +34,5 @@ export const SubHeadingText = styled.div`
 `;
 
 export const Text = styled.div`
-    font-size: 23px;
+    font-size: 22px;
 `;

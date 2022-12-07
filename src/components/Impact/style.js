@@ -3,7 +3,7 @@ import Color from '../../styles/color';
 
 export const MainContainer = styled.div`
   justify-content: center;
-  min-height: 2338px;
+  min-height: 1900px;
   display: flex;
 `;
 
@@ -25,18 +25,18 @@ export const HeadingSubContainer = styled.div`
 `;
 
 export const Circle = styled.div`
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
     background-color: #FFC800;
     position: absolute;
     top: 19%;
-    left: -10%;
+    left: -15%;
     z-index: -1;
 `;
 
 export const HeadingText = styled.h1`
-   font-size: 60px;
+   font-size: 50px;
 `;
 
 export const ImpactContentContainer = styled.div`
@@ -75,7 +75,7 @@ export const Image = styled.img`
 `;
 
 export const TextContentHeading = styled.h1`
-  font-size: 44px;
+  font-size: 38px;
   font-weight: 700;
 `;
 
@@ -96,7 +96,7 @@ export const BulletPointContainer = styled.div`
 
 export const BulletPointText = styled.h2`
   margin-left: 7px;
-  font-size: 24px;
+  font-size: 22px;
 `;
 
 export const BackGroundCircle = styled.div`
@@ -127,18 +127,18 @@ export const GraphAnalysis1 = styled.div`
 
 export const PercentageText = styled.div`
   color: ${Color.primaryColor};
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 700;
   margin-right: 4px;
 `;
 
 export const DownArrow = styled.div`
   color: #35D5A4;
-  font-size: 48px;
+  font-size: 35px;
   margin-right: 10px;
 `;
 
 export const AnalysisText = styled.div`
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
 `;

@@ -71,7 +71,7 @@ export const TextContentContainer = styled.div`
   color: white;
 `;
 
-export const Image = styled.img`
+export const Video = styled.video`
   margin-top: 45px;
   max-width: 471px;
 `;
