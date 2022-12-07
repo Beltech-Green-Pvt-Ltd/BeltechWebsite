@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BeltechWebsite/static/css/main.740270d0.css",
-    "main.js": "/BeltechWebsite/static/js/main.7c83c421.js",
+    "main.js": "/BeltechWebsite/static/js/main.cddea1f2.js",
     "static/css/256.581aa36f.chunk.css": "/BeltechWebsite/static/css/256.581aa36f.chunk.css",
     "static/js/256.f7dad8b7.chunk.js": "/BeltechWebsite/static/js/256.f7dad8b7.chunk.js",
     "static/js/813.c733f507.chunk.js": "/BeltechWebsite/static/js/813.c733f507.chunk.js",
@@ -45,7 +45,7 @@
     "static/media/cross.svg": "/BeltechWebsite/static/media/cross.c6b5f1a3611b4123de872fd80d579874.svg",
     "static/media/Link.svg": "/BeltechWebsite/static/media/Link.17c9ffde5d0e53e5e9c86c7fa99380d3.svg",
     "main.740270d0.css.map": "/BeltechWebsite/static/css/main.740270d0.css.map",
-    "main.7c83c421.js.map": "/BeltechWebsite/static/js/main.7c83c421.js.map",
+    "main.cddea1f2.js.map": "/BeltechWebsite/static/js/main.cddea1f2.js.map",
     "256.581aa36f.chunk.css.map": "/BeltechWebsite/static/css/256.581aa36f.chunk.css.map",
     "256.f7dad8b7.chunk.js.map": "/BeltechWebsite/static/js/256.f7dad8b7.chunk.js.map",
     "813.c733f507.chunk.js.map": "/BeltechWebsite/static/js/813.c733f507.chunk.js.map",
@@ -59,6 +59,6 @@
   },
   "entrypoints": [
     "static/css/main.740270d0.css",
-    "static/js/main.7c83c421.js"
+    "static/js/main.cddea1f2.js"
   ]
 }
