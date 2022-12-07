@@ -23,7 +23,6 @@ import {
 } from "./style";
 import JobDescription from "../JobDescription";
 import searchIcon from "../../assets/SearchIcon.svg";
-import Papa from "papaparse";
 import CarrerData from "../../assets/carrerCsv/careers.csv";
 import LocationIcon from "../../assets/location.svg";
 import ClockIcon from "../../assets/Clock.svg";
