@@ -19,8 +19,8 @@ export const Container = styled.div`
     justify-content: space-between;
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 `;
 
 export const LogoContainer = styled.div`
