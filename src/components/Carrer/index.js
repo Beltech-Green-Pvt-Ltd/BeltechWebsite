@@ -37,7 +37,7 @@ const Carrer = () => {
           </ImageContainer>
           <CareerCTAContainer>
                 <CareerHeadingText>Your career journey starts from here</CareerHeadingText>
-                <CTA>Discover Career at Beltech</CTA>
+                <CTA to="/career">Discover Career at Beltech</CTA>
           </CareerCTAContainer>
         </ContentContainer>
       </Container>

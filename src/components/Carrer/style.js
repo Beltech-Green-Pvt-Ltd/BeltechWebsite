@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
-  height: 801px;
+  height: 700px;
 `;
 
 export const Container = styled.div`
@@ -13,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const HeadingText = styled.h1`
-    font-size: 60px;
+    font-size: 50px;
     z-index: 10;
 `;
 
@@ -60,13 +61,13 @@ export const HeadingContainer = styled.div`
 `;
 
 export const Circle = styled.div`
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
     background-color: #FFC800;
     position: absolute;
     top: 19%;
-    left: -10%;
+    left: -15%;
     z-index: 0;
 `;
 
@@ -78,15 +79,17 @@ export const HeadingSubContainer = styled.div`
 export const CareerHeadingText = styled.h2`
     color: #05052C;
     width: 383px;
-    font-size: 45px;
+    font-size: 38px;
 `;
 
-export const CTA = styled.button`
+export const CTA = styled(Link)`
     width: 450px;
     background-color: #006AE9;
     height: 80px;
+    padding: 15px 45px 15px 45px;
     border: none;
     color: white;
-    font-size: 32px;
+    font-size: 28px;
     border-radius: 8px;
+    text-decoration: none;
 `;
