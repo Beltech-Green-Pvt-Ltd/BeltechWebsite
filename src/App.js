@@ -16,6 +16,8 @@ const Carrer = lazy(() => import("./container/CarrerPage"));
 const Team = lazy(() => import("./container/TeamPage/"));
 const Product = lazy(() => import("./container/ProductPage"));
 const Apply  = lazy(() => import("./container/ApplyPage"));
+const PrivacyPolicy = lazy(() => import("./container/PrivacyPage"));
+const TermsAndCondition = lazy(() => import("./container/TermAndConditionPage"));
 
 function App() {
   return (
@@ -31,8 +33,8 @@ function App() {
           <Route path="/contactus" element={<ContactUs />}/>
           <Route path="/product" element={<Product />}/>
           <Route path="/apply" element={<Apply />}/>
-          <Route path="/privacyPolicy" element={<h1>Privacy</h1>}/>
-          <Route path="/T&C" element={<h1>Terms and condition</h1>}/>
+          <Route path="/privacyPolicy" element={<PrivacyPolicy />}/>
+          <Route path="/T&C" element={<TermsAndCondition />}/>
       </Routes>
       </Suspense>
       <Footer />
