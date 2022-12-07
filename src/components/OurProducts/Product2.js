@@ -1,7 +1,7 @@
 import React from "react";
 import {
   ProductContainer,
-  Image,
+  Image2,
   InfoContainer,
   ProductHeadingText,
   ListContainer,
@@ -11,34 +11,35 @@ import {
   KnowMoreButton,
 } from "./style";
 import Traffic from "../../assets/Traffic.png";
+import TourismApp from '../../assets/SikkimtourismApp.png';
 
 const Product1 = () => {
   return (
     <ProductContainer>
-      <Image src={Traffic} />
+      <Image2 src={TourismApp} />
       <InfoContainer>
         <ProductHeadingText>
-          AI Driven Integrated Security Platoform
+            AI Driven Tourism Platoform
         </ProductHeadingText>
         <ListContainer>
           <List>
             <BulletPoint />
-            <ListText>Detects suspicious/illegal activities</ListText>
+            <ListText>Single platform to manage tourists and vendors</ListText>
           </List>
           <List>
             <BulletPoint />
-            <ListText>Criminal Detection</ListText>
+            <ListText>Detailed analytics of tourists which helps boosting tourism</ListText>
           </List>
           <List>
             <BulletPoint />
-            <ListText>Suspicious people detection</ListText>
+            <ListText>Tracking of tourists in restricted areas</ListText>
           </List>
           <List>
             <BulletPoint />
-            <ListText>Customisable intelligence parameters</ListText>
+            <ListText>App for tourists</ListText>
           </List>
         </ListContainer>
-        <KnowMoreButton to="/product#trafficManagement">Know more</KnowMoreButton>
+        <KnowMoreButton to="/product#tourismplatform">Know more</KnowMoreButton>
       </InfoContainer>
     </ProductContainer>
   );

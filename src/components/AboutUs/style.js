@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
-  min-height: 603px;
+  min-height: 420px;
 `;
 
 export const Container = styled.div`
@@ -19,9 +19,9 @@ export const Container = styled.div`
 `;
 
 export const HeadingText = styled.div`
-    font-size: 60px;
+    font-size: 50px;
     color: #000A55;
-    margin-bottom: 126px;
+    margin-bottom: 105px;
     font-weight: 700;
 `;
 
@@ -39,10 +39,10 @@ export const AboutUsContent = styled.div`
 `;
 
 export const Image = styled.img`
-    width: 117px;
+    width: 104px;
 `;
 
 export const Text = styled.div`
-    font-size: 24px;
+    font-size: 22px;
     margin-left: 25px;
 `;

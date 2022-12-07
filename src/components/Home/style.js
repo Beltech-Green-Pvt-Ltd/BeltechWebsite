@@ -38,7 +38,8 @@ export const Circle = styled.div`
     height: 100px;
     border-radius: 50px;
     position: absolute;
-    right: 20%;
+    right: 12%;
+    top: 60px;
 `;
 
 export const Circle2 = styled.div`
@@ -47,7 +48,8 @@ export const Circle2 = styled.div`
     height: 50px;
     border-radius: 25px;
     position: absolute;
-    bottom: 0;
+    right: 0;
+    bottom: 8%;
 `;
 
 export const SubHeadingText = styled.h2`

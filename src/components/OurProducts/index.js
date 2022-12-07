@@ -10,6 +10,7 @@ import {
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Product1 from "./Product1";
+import Product2 from "./Product2";
 import Next from '../../assets/Right.png';
 import Left from '../../assets/Left.png';
 
@@ -21,7 +22,7 @@ const OurProducts = () => {
           <HeadingText>Our Products</HeadingText>
         </HeadingContainer>
         <ViewAllButtonContainer>
-          <ViewAllButton to="/carrer">
+          <ViewAllButton to="/product">
             <div>View All</div>
             <div>&#8594;</div>
           </ViewAllButton>
@@ -43,7 +44,7 @@ const OurProducts = () => {
         }
         showStatus={false}>
             <Product1 />
-            <Product1 />
+            <Product2 />
         </Carousel>
       </Container>
     </MainContainer>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
-  height: 881px;
+  height: 810px;
 `;
 
 export const Container = styled.div`
@@ -25,7 +25,7 @@ export const HeadingContainer = styled.div`
 
 export const HeadingText = styled.div`
   font-weight: 700;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 72px;
   letter-spacing: -0.3px;
   color: white;
@@ -39,8 +39,8 @@ export const ViewAllButtonContainer = styled.div`
 `;
 
 export const ViewAllButton = styled(Link)`
-  width: 187px;
-  height: 56px;
+  width: 170px;
+  height: 50px;
 
   border: 3px solid #5277f7;
   border-radius: 4px;
@@ -69,16 +69,21 @@ export const ProductContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 560px !important;
+  width: 540px !important;
   height: 389px;
 `;
+
+export const Image2 = styled.img`
+  width: 400px !important;
+`;
+
 
 export const InfoContainer = styled.div`
   background-image: url(${Ai});
   width: 688px;
   height: 570px;
   padding-top: 20px;
-  padding-left: 66px;
+  padding-left: 95px;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
@@ -87,7 +92,7 @@ export const InfoContainer = styled.div`
 
 export const ProductHeadingText = styled.div`
   font-weight: 800;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 48px;
   letter-spacing: -0.3px;
   color: white;
@@ -97,8 +102,8 @@ export const ProductHeadingText = styled.div`
 
 export const BulletPoint = styled.div`
   background-color: ${Color.primaryColor};
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 5px;
 `;
 
@@ -114,24 +119,20 @@ export const List = styled.div`
 export const ListText = styled.div`
   color: white;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   padding: 8px;
-
-  /* identical to box height */
-  letter-spacing: -0.3px;
-
   color: #d9d9d9;
 `;
 
 export const KnowMoreButton = styled(Link)`
   background-color: ${Color.primaryColor};
   border-radius: 8px;
-  width: 161.28px;
-  height: 56px;
+  width: 140px;
+  height: 53px;
   color: white;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 29px;
 
   /* identical to box height */
