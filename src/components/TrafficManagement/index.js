@@ -23,12 +23,22 @@ import {
   PercentageText,
   DownArrow,
   AnalysisText,
-  BackGroundCircle1
+  BackGroundCircle1,
+  GraphAnalysisContainer,
+  InfoIcon,
+  HoverDiv,
+  HoverImage,
+  GraphText1,
+  AnalysisText1,
+  HoverDiv2
 } from "./style";
 
 import Graph1 from '../../assets/Graph1.png';
 import AIDashboard from '../../assets/AIDashboard.png';
 import ChallanApp from '../../assets/ChallanApp.png';
+import InfoImage from '../../assets/InfoIcon.svg';
+import HoverDivSvg from '../../assets/HoverDiv.svg';
+import HoverRightDivSvg from '../../assets/UnionRight.svg';
 
 const TrafficManagement = () => {
   return (
@@ -44,18 +54,24 @@ const TrafficManagement = () => {
             <GraphContentContainer>
               <BackGroundCircle />
               <Image src={Graph1} />
-              <GraphText>
-                "This data is from the pilot which was conducted in Central
-                Business District - Bangalore, under the supervision of
-                Bangalore Traffic Police Department."
-              </GraphText>
+              <GraphAnalysisContainer>
               <GraphAnalysis>
                 <PercentageText>42% </PercentageText>
                 <DownArrow>&darr; </DownArrow>
                 <AnalysisText>
                   Reduction in total wait-time at signals
                 </AnalysisText>
+                <InfoIcon src={InfoImage}/>
+                <HoverDiv>
+                  <HoverImage src={HoverDivSvg}/>
+                  <GraphText1>
+                "This data is from the pilot which was conducted in Central
+                Business District - Bangalore, under the supervision of
+                Bangalore Traffic Police Department."
+              </GraphText1>
+                </HoverDiv>
               </GraphAnalysis>
+              </GraphAnalysisContainer>
             </GraphContentContainer>
             <TextContentContainer>
               <TextContentHeading>Traffic Management System</TextContentHeading>
@@ -97,23 +113,29 @@ const TrafficManagement = () => {
             <GraphContentContainer>
               <BackGroundCircle />
               <Image src={Graph1} />
-              <GraphText>
-                "This data is from the pilot which was conducted in Central
-                Business District - Bangalore, under the supervision of
-                Bangalore Traffic Police Department."
-              </GraphText>
               <GraphAnalysis1>
                 <PercentageText>95% + </PercentageText>
                 <AnalysisText>
                   Accuracy
                 </AnalysisText>
               </GraphAnalysis1>
-              <GraphAnalysis>
-                <PercentageText>1000+</PercentageText>
-                <AnalysisText>
-                Violations detected per day per junction 
-                </AnalysisText>
-              </GraphAnalysis>
+              <GraphAnalysisContainer>
+                <GraphAnalysis>
+                  <PercentageText>1000+</PercentageText>
+                  <AnalysisText1>
+                  Violations detected per day per junction
+                  <InfoIcon src={InfoImage}/> 
+                  </AnalysisText1>
+                </GraphAnalysis>
+                <HoverDiv2>
+                  <HoverImage src={HoverRightDivSvg}/>
+                  <GraphText1>
+                "This data is from the pilot which was conducted in Central
+                Business District - Bangalore, under the supervision of
+                Bangalore Traffic Police Department."
+              </GraphText1>
+                </HoverDiv2>
+              </GraphAnalysisContainer>
             </GraphContentContainer>
             <TextContentContainer>
               <TextContentHeading>Traffic Violation System</TextContentHeading>
