@@ -74,7 +74,7 @@ export const Image = styled.img`
 `;
 
 export const Image2 = styled.img`
-  width: 400px !important;
+  width: 600px !important;
 `;
 
 
