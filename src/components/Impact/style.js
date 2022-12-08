@@ -66,6 +66,7 @@ export const GraphContentContainer = styled.div`
 `;
 
 export const TextContentContainer = styled.div`
+padding-top: 30px;
   max-width: 520px;
 `;
 
@@ -84,19 +85,20 @@ export const TextContentSubHeading = styled.div`
 
 export const BulletPoint = styled.div`
   background-color: ${Color.primaryColor};
-  min-width: 10px;
-  min-height: 10px;
+  min-width: 8px;
+  min-height: 8px;
   border-radius: 5px;
 `;
 
 export const BulletPointContainer = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 16px;
 `;
 
-export const BulletPointText = styled.h2`
+export const BulletPointText = styled.div`
   margin-left: 7px;
-  font-size: 22px;
+  font-size: 21px;
 `;
 
 export const BackGroundCircle = styled.div`
