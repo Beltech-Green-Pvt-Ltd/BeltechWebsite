@@ -59,7 +59,7 @@ export const ContentContainer2 = styled.div`
 
 export const GraphContentContainer = styled.div`
   position: relative;
-  max-width: 515px;
+  max-width: 560px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,10 +114,21 @@ export const GraphText = styled.div`
   font-size: 14px;
 `;
 
+export const GraphText1 = styled.div`
+  font-size: 14px;
+  position: relative;
+  top: -120%;
+  left: 5%;
+`;
+
 export const GraphAnalysis = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 7px;
+`;
+
+export const GraphAnalysisContainer = styled.div`
+  position: relative;
 `;
 
 export const GraphAnalysis1 = styled.div`
@@ -129,7 +140,7 @@ export const GraphAnalysis1 = styled.div`
 
 export const PercentageText = styled.div`
   color: ${Color.primaryColor};
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 700;
   margin-right: 4px;
 `;
@@ -144,3 +155,45 @@ export const AnalysisText = styled.div`
   font-size: 24px;
   font-weight: 700;
 `;
+
+export const AnalysisText1 = styled.div`
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+`;
+
+export const InfoIcon = styled.img`
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+`;
+
+export const HoverDiv = styled.div`
+  position: absolute;
+  right: -94%;
+  top: 70%;
+  width: 524px;
+  height: 50px;
+  display: none;
+  ${GraphAnalysisContainer}:hover & {
+    display: block;
+  }
+`;
+
+export const HoverDiv2 = styled.div`
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  width: 524px;
+  height: 50px;
+  display: none;
+  ${GraphAnalysisContainer}:hover & {
+    display: block;
+  }
+`;
+
+
+
+export const HoverImage = styled.img`
+`;
+

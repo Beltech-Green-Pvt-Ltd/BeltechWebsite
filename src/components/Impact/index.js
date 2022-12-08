@@ -23,11 +23,21 @@ import {
   PercentageText,
   DownArrow,
   AnalysisText,
-  GraphAnalysis1
+  GraphAnalysis1,
+  HoverDiv,
+  InfoIcon,
+  GraphAnalysisContainer,
+  HoverImage,
+  GraphText1,
+  HoverDiv2,
+  AnalysisText1
 } from "./style";
 import Graph1 from "../../assets/Graph1.png";
 import Graph2 from "../../assets/Graph2.png";
 import Graph3 from "../../assets/Graph3.png";
+import InfoImage from "../../assets/InfoIcon.svg";
+import HoverDivSvg from "../../assets/HoverDiv.svg";
+import HoverRightDivSvg from '../../assets/UnionRight.svg';
 
 const Impact = () => {
   return (
@@ -44,18 +54,24 @@ const Impact = () => {
             <GraphContentContainer>
               <BackGroundCircle />
               <Image src={Graph2} />
-              <GraphText>
-                "This data is from the pilot which was conducted in Central
-                Business District - Bangalore, under the supervision of
-                Bangalore Traffic Police Department."
-              </GraphText>
+              <GraphAnalysisContainer>
               <GraphAnalysis>
                 <PercentageText>42% </PercentageText>
                 <DownArrow>&darr; </DownArrow>
                 <AnalysisText>
                   Reduction in total wait-time at signals
                 </AnalysisText>
+                <InfoIcon src={InfoImage}/>
               </GraphAnalysis>
+              <HoverDiv>
+              <HoverImage src={HoverDivSvg}/>
+              <GraphText1>
+                "This data is from the pilot which was conducted in Central
+                Business District - Bangalore, under the supervision of
+                Bangalore Traffic Police Department."
+              </GraphText1>
+              </HoverDiv>
+              </GraphAnalysisContainer>
             </GraphContentContainer>
             <TextContentContainer>
               <TextContentHeading>Traffic Management System</TextContentHeading>
@@ -97,23 +113,29 @@ const Impact = () => {
             <GraphContentContainer>
               <BackGroundCircle />
               <Image src={Graph3} />
-              <GraphText>
-                "This data is from the pilot which was conducted in Central
-                Business District - Bangalore, under the supervision of
-                Bangalore Traffic Police Department."
-              </GraphText>
               <GraphAnalysis1>
                 <PercentageText>95% + </PercentageText>
                 <AnalysisText>
                   Accuracy
                 </AnalysisText>
               </GraphAnalysis1>
+              <GraphAnalysisContainer>
               <GraphAnalysis>
                 <PercentageText>1000+</PercentageText>
-                <AnalysisText>
+                <AnalysisText1>
                 Violations detected per day per junction 
-                </AnalysisText>
+                <InfoIcon src={InfoImage}/>
+                </AnalysisText1>
               </GraphAnalysis>
+              <HoverDiv2>
+              <HoverImage src={HoverRightDivSvg}/>
+              <GraphText1>
+                "This data is from the pilot which was conducted in Central
+                Business District - Bangalore, under the supervision of
+                Bangalore Traffic Police Department."
+              </GraphText1>
+              </HoverDiv2>
+              </GraphAnalysisContainer>
             </GraphContentContainer>
             <TextContentContainer>
               <TextContentHeading>Traffic Violation System</TextContentHeading>
