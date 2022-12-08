@@ -10,8 +10,7 @@ import {
   ListText,
   KnowMoreButton,
 } from "./style";
-import Traffic from "../../assets/Traffic.png";
-import TourismApp from '../../assets/SikkimtourismApp.png';
+import TourismApp from '../../assets/TourismProduct.png';
 
 const Product1 = () => {
   return (
