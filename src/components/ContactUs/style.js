@@ -95,4 +95,10 @@ export const Button = styled.button`
     color: white;
     font-size: 20px;
     margin-top: 90px;
+    cursor: pointer;
+`;
+
+export const ErrorText = styled.div`
+  color: red;
+  padding-left: 5px;
 `;

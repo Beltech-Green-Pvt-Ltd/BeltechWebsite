@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { db } from "../../firebase";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
 import {
   ContactUsForm,
   EmailInput,
@@ -11,7 +13,8 @@ import {
   Label,
   RequirementContainer,
   RequirementField,
-  Button
+  Button,
+  ErrorText,
 } from "./style";
 
 const Product = [
@@ -29,6 +32,59 @@ const ContactForm = () => {
   const [organisationName, setOrganisationName] = useState("");
   const [requirement, setRequirments] = useState("");
   const [checkedState, setCheckedState] = useState(new Array(5).fill(false));
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [phoneNumberError, setPhoneNumberError] = useState("");
+  const [organisationNameError, setOrganisationNameError] = useState("");
+  const [checkedError, setCheckedError] = useState("");
+
+  const parsedProduct = (data) => {
+    let x = [];
+    for(let i = 0; i < data.length ; i++){
+      if(data[i]){
+        x.push(Product[i]);
+      }
+    }
+    return x;
+  }
+
+  const formValidation = () =>{
+    console.log("Here we are coming");
+    if(nameError || emailError || phoneNumberError || organisationNameError){
+      return false;
+    }else{
+      let checked = false;
+      for(let i = 0; i< checkedState.length; i++){
+        if(checkedState[i] === true){
+          checked = true;
+        }
+      }
+      if(checked){
+        return true;
+      }else{
+        setCheckedError("Please Select at least one product");
+        return false;
+      }
+    }
+  }
+
+  const validateEmail  = (email) => {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  const resetForm = () =>{
+    setName("");
+    setEmail("");
+    setCheckedError("");
+    setPhoneNumber("");
+    setOrganisationName("");
+    setCheckedState(new Array(5).fill(false));
+  }
 
   const handleCheckBox = (index) => {
     let temp = [];
@@ -38,19 +94,86 @@ const ContactForm = () => {
     setCheckedState(temp);
   };
 
+  const handleSubmit = async () => {
+      if(formValidation()){
+        try{
+        await addDoc(collection(db, "contact"), {
+          name: name,
+          email: email,
+          phoneNumber: phoneNumber,
+          organisationName: organisationName,
+          requirement: requirement,
+          product: parsedProduct(checkedState),
+          created: Timestamp.now(),
+        });
+        alert("Your form is Submitted Successfully");
+        resetForm();
+      }catch(error){
+        alert(error);
+      }
+    }
+  };
+
   return (
     <ContactUsForm>
-      <NameInput placeholder="Name*" />
-      <EmailInput placeholder="Email*" />
+      <NameInput
+        placeholder="Name*"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        onBlur={() => {
+          if (!name) {
+            setNameError("Please enter name");
+          }else{
+            setNameError("");
+          }
+        }}
+        style={{borderColor: nameError ? 'red': ''}}
+      />
+      {nameError ? <ErrorText>{nameError}</ErrorText> : <></>}
+      <EmailInput
+        placeholder="Email*"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        onBlur = {() => {
+          if(!validateEmail(email)){
+            setEmailError("Please Enter a valid Email");
+          }else{
+            setEmailError("");
+          }
+        }}
+      />
+      {emailError ? <ErrorText>{emailError}</ErrorText> : <></>}
       <PhoneNumberInput
         placeholder="Phone Number*"
+        value={phoneNumber}
+        onChange={(e) => setPhoneNumber(e.target.value)}
         onKeyPress={(event) => {
           if (!/[0-9]/.test(event.key)) {
             event.preventDefault();
           }
         }}
+        onBlur = {() => {
+          if(phoneNumber.length > 13 || phoneNumber.length < 10){
+            setPhoneNumberError("Please Enter a valid phone Number");
+          }else{
+            setPhoneNumberError("");
+          }
+        }}
       />
-      <OrganisationName placeholder="Organisation Name*" />
+      {phoneNumberError ? <ErrorText>{phoneNumberError}</ErrorText> : <></>}
+      <OrganisationName
+        placeholder="Organisation Name*"
+        value={organisationName}
+        onChange={(e) => setOrganisationName(e.target.value)}
+        onBlur={() => {
+          if(!organisationName){
+            setOrganisationNameError("Please Enter a organisation name");
+          }else{
+            setOrganisationNameError("");
+          }
+        }}
+      />
+      {organisationNameError ? <ErrorText>{organisationNameError}</ErrorText> : <></>}
       <ProductText>Select product that you are interested in* </ProductText>
       <ProductContainer>
         {Product.map((data, index) => {
@@ -67,10 +190,15 @@ const ContactForm = () => {
           );
         })}
       </ProductContainer>
+      {checkedError ? <ErrorText>{checkedError}</ErrorText> : <></>}
       <RequirementContainer>
-        <RequirementField placeholder="Tell us about your requirements"/>
+        <RequirementField
+          placeholder="Tell us about your requirements"
+          value={requirement}
+          onChange={(e) => setRequirments(e.target.value)}
+        />
       </RequirementContainer>
-      <Button>Submit</Button>
+      <Button onClick={() => handleSubmit()}>Submit</Button>
     </ContactUsForm>
   );
 };
