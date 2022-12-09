@@ -4,6 +4,9 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   min-height: 420px;
+  @media (max-width: 1330px) {
+    min-height: 380px;
+  }
 `;
 
 export const Container = styled.div`
@@ -23,6 +26,9 @@ export const HeadingText = styled.div`
     color: #000A55;
     margin-bottom: 105px;
     font-weight: 700;
+    @media (max-width: 1330px) {
+        font-size: 45px;
+    }
 `;
 
 export const ContentContainer = styled.div`

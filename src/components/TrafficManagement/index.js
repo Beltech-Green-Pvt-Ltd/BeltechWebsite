@@ -33,7 +33,9 @@ import {
   HoverDiv2
 } from "./style";
 
-import Graph1 from '../../assets/Graph1.png';
+import Graph1 from '../../assets/Graph2.png';
+import Graph2 from '../../assets/Graph3.png';
+import Graph3 from '../../assets/Graph1.png';
 import AIDashboard from '../../assets/AIDashboard.png';
 import ChallanApp from '../../assets/ChallanApp.png';
 import InfoImage from '../../assets/InfoIcon.svg';
@@ -112,7 +114,7 @@ const TrafficManagement = () => {
           <ContentContainer2>
             <GraphContentContainer>
               <BackGroundCircle />
-              <Image src={Graph1} />
+              <Image src={Graph2} />
               <GraphAnalysis1>
                 <PercentageText>95% + </PercentageText>
                 <AnalysisText>
@@ -176,7 +178,7 @@ const TrafficManagement = () => {
           <ContentContainer>
             <GraphContentContainer>
               <BackGroundCircle />
-              <Image src={Graph1} />
+              <Image src={Graph3} />
               <GraphAnalysis>
                 <PercentageText>200tons </PercentageText>
                 <DownArrow>&darr; </DownArrow>

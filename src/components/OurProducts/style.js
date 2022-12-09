@@ -71,10 +71,17 @@ export const ProductContainer = styled.div`
 export const Image = styled.img`
   width: 540px !important;
   height: 389px;
+  @media (max-width: 1330px) {
+    width: 450px !important;
+    height: 340px;
+  }
 `;
 
 export const Image2 = styled.img`
   width: 600px !important;
+  @media (max-width: 1330px) {
+    width: 450px !important;
+  }
 `;
 
 
@@ -98,6 +105,9 @@ export const ProductHeadingText = styled.div`
   color: white;
   text-align: left;
   width: 455px;
+  @media (max-width: 1330px) {
+    font-size: 32px;
+  }
 `;
 
 export const BulletPoint = styled.div`
@@ -142,4 +152,26 @@ export const KnowMoreButton = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1330px) {
+    width: 120px;
+    font-size: 19px;
+  }
+`;
+
+export const NextIcon = styled.img`
+  width: 31px;
+  height: 54px;
+  @media (max-width: 1330px) {
+    width: 27px;
+    height: 50px;
+  }
+`;
+
+export const PrevIcon = styled.img`
+  width: 31px;
+  height: 54px;
+  @media (max-width: 1330px) {
+    width: 27px;
+    height: 50px;
+  }
 `;
