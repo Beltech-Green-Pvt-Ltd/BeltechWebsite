@@ -16,6 +16,9 @@ export const Container = styled.div`
 export const HeadingText = styled.h1`
     font-size: 50px;
     z-index: 10;
+    @media (max-width: 1330px) {
+        font-size: 45px;
+    }
 `;
 
 export const ContentContainer = styled.div`
@@ -39,6 +42,9 @@ export const CareerCTAContainer = styled.div`
 
 export const Image1 = styled.img`
     max-width: 245px;
+    @media (max-width: 1330px) {
+        width: 200px;
+    }
 `;
 
 export const Image2 = styled.img`
@@ -46,11 +52,17 @@ export const Image2 = styled.img`
     position: absolute;
     left: 200px;
     top: 50px;
+    @media (max-width: 1330px) {
+        width: 200px;
+    }
 `;
 
 export const Image3 = styled.img`
     max-width: 245px;
     margin-left: 170px;
+    @media (max-width: 1330px) {
+        width: 200px;
+    }
 `;
 
 export const HeadingContainer = styled.div`
@@ -69,6 +81,10 @@ export const Circle = styled.div`
     top: 19%;
     left: -15%;
     z-index: 0;
+    @media (max-width: 1330px) {
+        width: 70px;
+        height: 70px;
+    }
 `;
 
 export const HeadingSubContainer = styled.div`
@@ -80,6 +96,9 @@ export const CareerHeadingText = styled.h2`
     color: #05052C;
     width: 383px;
     font-size: 38px;
+    @media (max-width: 1330px) {
+        font-size: 34px;
+    }
 `;
 
 export const CTA = styled(Link)`
@@ -92,4 +111,7 @@ export const CTA = styled(Link)`
     font-size: 28px;
     border-radius: 8px;
     text-decoration: none;
+    @media (max-width: 1330px) {
+        font-size: 24px;
+    }
 `;
