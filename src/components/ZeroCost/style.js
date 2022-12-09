@@ -4,6 +4,9 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   min-height: 300px;
+  @media (max-width: 1330px) {
+    min-height: 270px;
+  }
 `;
 
 export const Container = styled.div`
@@ -24,9 +27,15 @@ export const HeadingText = styled.div`
     color: white;
     font-size: 63px;
     font-weight: 800;
+    @media (max-width: 1330px) {
+      font-size: 60px;
+    }
 `;
 
 export const SubHeadingText = styled.div`
     color: white;
     font-size: 43px;
+    @media (max-width: 1330px) {
+      font-size: 39px;
+    }
 `;

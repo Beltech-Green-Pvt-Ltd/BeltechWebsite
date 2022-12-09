@@ -6,6 +6,9 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 356px;
+  @media (max-width: 1330px) {
+    height: 340px;
+  }
 `;
 
 export const Container = styled.div`
@@ -23,6 +26,9 @@ export const HeadingText = styled.div`
     margin-bottom: 40px;
     color: #000A55;
     font-weight: 700;
+    @media (max-width: 1330px) {
+      font-size: 45px;
+    }
 `;
 
 export const SubHeadingText = styled.div`
@@ -31,8 +37,14 @@ export const SubHeadingText = styled.div`
     color: ${Colors.primaryColor};
     margin-bottom: 9px;
     line-height: 48px;
+    @media (max-width: 1330px) {
+      font-size: 28px;
+    }
 `;
 
 export const Text = styled.div`
     font-size: 22px;
+    @media (max-width: 1330px) {
+      font-size: 21px;
+    }
 `;
