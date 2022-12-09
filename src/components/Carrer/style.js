@@ -5,6 +5,9 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 700px;
+  @media (max-width: 1200px) {
+        height: 600px;
+    }
 `;
 
 export const Container = styled.div`
@@ -27,6 +30,16 @@ export const ContentContainer = styled.div`
     padding-right: 100px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1330px) {
+        font-size: 45px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    @media (max-width: 1200px) {
+        margin-top: 80px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 `;
 
 export const ImageContainer = styled.div`
@@ -45,6 +58,9 @@ export const Image1 = styled.img`
     @media (max-width: 1330px) {
         width: 200px;
     }
+    @media (max-width: 1200px) {
+        width: 160px;
+    }
 `;
 
 export const Image2 = styled.img`
@@ -55,6 +71,10 @@ export const Image2 = styled.img`
     @media (max-width: 1330px) {
         width: 200px;
     }
+    @media (max-width: 1200px) {
+        width: 160px;
+        left: 140px;
+    }
 `;
 
 export const Image3 = styled.img`
@@ -62,6 +82,10 @@ export const Image3 = styled.img`
     margin-left: 170px;
     @media (max-width: 1330px) {
         width: 200px;
+    }
+    @media (max-width: 1200px) {
+        width: 160px;
+        margin-left: 120px;
     }
 `;
 
@@ -99,10 +123,12 @@ export const CareerHeadingText = styled.h2`
     @media (max-width: 1330px) {
         font-size: 34px;
     }
+    @media (max-width: 1200px) {
+        font-size: 25px;
+    }
 `;
 
 export const CTA = styled(Link)`
-    width: 450px;
     background-color: #006AE9;
     height: 80px;
     padding: 15px 45px 15px 45px;
@@ -113,5 +139,9 @@ export const CTA = styled(Link)`
     text-decoration: none;
     @media (max-width: 1330px) {
         font-size: 24px;
+    }
+    @media (max-width: 1200px) {
+        font-size: 20px;
+        padding: 15px 38px 15px 38px;
     }
 `;

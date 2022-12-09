@@ -8,6 +8,9 @@ export const MainContainer = styled.div`
     @media (max-width: 1330px) {
         height: 710px;
     }
+    @media (max-width: 1330px) {
+        height: 650px;
+    }
 `;
 
 export const Container = styled.div`
@@ -35,6 +38,9 @@ export const HeadingText = styled.h1`
     @media (max-width: 1330px) {
         font-size: 75px;
     }
+    @media (max-width: 1200px) {
+        font-size: 70px;
+    }
 `;
 
 export const Circle = styled.div`
@@ -49,6 +55,11 @@ export const Circle = styled.div`
         width: 90px;
         height: 90px;
     }
+    @media (max-width: 1200px) {
+        width: 80px;
+        height: 80px;
+        top: 54px;
+    }
 `;
 
 export const Circle2 = styled.div`
@@ -59,6 +70,11 @@ export const Circle2 = styled.div`
     position: absolute;
     right: 0;
     bottom: 8%;
+    @media (max-width: 1200px) {
+        width: 40px;
+        height: 40px;
+        bottom: 10%;
+    }
 `;
 
 export const SubHeadingText = styled.h2`
@@ -66,5 +82,8 @@ export const SubHeadingText = styled.h2`
     font-size: 40;
     @media (max-width: 1330px) {
         font-size: 36px;
+    }
+    @media (max-width: 1200px) {
+        font-size: 30px;
     }
 `;
