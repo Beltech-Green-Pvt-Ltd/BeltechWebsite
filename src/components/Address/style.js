@@ -2,6 +2,14 @@ import styled from "styled-components";
 
 export const AddressContainer = styled.div`
   width: 205px;
+  @media (max-width: 770px) {
+    width: 60%;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    padding-left: 21px;
+    padding-bottom: 40px;
+  }
 `;
 
 export const HeadingText = styled.div`
@@ -23,6 +31,9 @@ export const CorporateOfficeContainer = styled.div``;
 
 export const RegistredOfficeContainer = styled.div`
   margin-top: 101px;
+  @media (max-width: 770px) {
+    margin-top: 80px;
+  }
 `;
 
 export const RegisterOfficeText = styled.div`
@@ -35,6 +46,9 @@ export const RegisterOfficeText = styled.div`
 
 export const ContactDetailsContainer = styled.div`
   margin-top: 89px;
+  @media (max-width: 770px) {
+    margin-top: 75px;
+  }
 `;
 
 export const SubHeading = styled.div`

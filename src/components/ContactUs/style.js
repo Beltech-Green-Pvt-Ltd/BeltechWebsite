@@ -6,10 +6,14 @@ export const ContactUsForm = styled.div`
   flex-direction: column;
   width: 50%;
   padding-bottom: 165px;
+  @media (max-width: 770px) {
+    width: 90%;
+    padding-bottom: 120px;
+  }
 `;
 
 export const NameInput = styled.input`
-  width: 736px;
+  max-width: 736px;
   height: 50px;
   border: 1px solid #7d7d7d;
   border-radius: 6px;
@@ -19,7 +23,7 @@ export const NameInput = styled.input`
 `;
 
 export const EmailInput = styled.input`
-  width: 736px;
+  max-width: 736px;
   height: 50px;
   border: 1px solid #7d7d7d;
   border-radius: 6px;
@@ -29,7 +33,7 @@ export const EmailInput = styled.input`
 `;
 
 export const PhoneNumberInput = styled.input`
-  width: 736px;
+  max-width: 736px;
   height: 50px;
   border: 1px solid #7d7d7d;
   border-radius: 6px;
@@ -39,7 +43,7 @@ export const PhoneNumberInput = styled.input`
 `;
 
 export const OrganisationName = styled.input`
-  width: 736px;
+  max-width: 736px;
   height: 50px;
   border: 1px solid #7d7d7d;
   border-radius: 6px;
@@ -50,10 +54,11 @@ export const OrganisationName = styled.input`
 
 export const RequirementContainer = styled.div`
     margin-top: 80px;
+    max-width: 757px;
 `;
 
 export const RequirementField = styled.textarea`
-  width: 757px;
+  width: 100%;
   height: 261px;
   border: 1px solid #05052c;
   border-radius: 6px;
@@ -96,6 +101,10 @@ export const Button = styled.button`
     font-size: 20px;
     margin-top: 90px;
     cursor: pointer;
+    @media (max-width: 770px) {
+      align-self: center;
+      margin-top: 60px;
+    }
 `;
 
 export const ErrorText = styled.div`

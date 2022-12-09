@@ -31,6 +31,11 @@ export const Circle = styled.div`
   top: 22%;
   left: -10%;
   z-index: -1;
+  @media (max-width: 770px) {
+    width: 50px;
+    height: 50px;
+    top: 19%;
+  }
 `;
 
 export const HeadingText = styled.h1`
@@ -38,10 +43,18 @@ export const HeadingText = styled.h1`
   font-size: 47px;
   line-height: 72px;
   color: #130f26;
+  @media (max-width: 770px) {
+    font-size: 32px;
+    margin: 0;
+  }
 `;
 
 export const ContactContainer = styled.div`
   margin-top: 70px;
   display: flex;
   justify-content: space-around;
+  @media (max-width: 770px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
