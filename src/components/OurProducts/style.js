@@ -8,6 +8,9 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 810px;
+  @media (max-width: 1200px) {
+    height: 760px;
+  }
 `;
 
 export const Container = styled.div`
@@ -21,14 +24,19 @@ export const HeadingContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 79px;
+  @media (max-width: 1200px) {
+    margin-top: 65px;
+  }
 `;
 
 export const HeadingText = styled.div`
   font-weight: 700;
   font-size: 50px;
   line-height: 72px;
-  letter-spacing: -0.3px;
   color: white;
+  @media (max-width: 1200px) {
+    font-size: 45px;
+  }
 `;
 
 export const ViewAllButtonContainer = styled.div`
@@ -58,6 +66,12 @@ export const ViewAllButton = styled(Link)`
   position: absolute;
   top: -55px;
   text-decoration: none;
+  @media (max-width: 1200px) {
+    width: 160px;
+    height: 48px;
+    font-size: 22px;
+    top: -40px;
+  }
 `;
 
 export const ProductContainer = styled.div`
@@ -66,21 +80,33 @@ export const ProductContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  @media (max-width: 1200px) {
+    margin-top: 0px;
+  }
 `;
 
 export const Image = styled.img`
   width: 540px !important;
+  margin-left: 100px;
   height: 389px;
   @media (max-width: 1330px) {
     width: 450px !important;
     height: 340px;
   }
+  @media (max-width: 1200px) {
+    width: 360px !important;
+    height: 300px;
+  }
 `;
 
 export const Image2 = styled.img`
   width: 600px !important;
+  margin-left: 40px;
   @media (max-width: 1330px) {
     width: 450px !important;
+  }
+  @media (max-width: 1200px) {
+    width: 360px !important;
   }
 `;
 
@@ -95,6 +121,9 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   padding-top: 100px;
   background-size: contain;
+  @media (max-width: 1200px) {
+    padding-left: 60px;
+  }
 `;
 
 export const ProductHeadingText = styled.div`
@@ -119,6 +148,9 @@ export const BulletPoint = styled.div`
 
 export const ListContainer = styled.div`
   margin-top: 38px;
+  @media (max-width: 1200px) {
+    margin-top: 24px;
+  }
 `;
 
 export const List = styled.div`
@@ -133,6 +165,10 @@ export const ListText = styled.div`
   line-height: 26px;
   padding: 8px;
   color: #d9d9d9;
+  @media (max-width: 1200px) {
+    padding: 6px;
+    text-align: left;
+  }
 `;
 
 export const KnowMoreButton = styled(Link)`
