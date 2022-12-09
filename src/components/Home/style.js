@@ -5,6 +5,9 @@ export const MainContainer = styled.div`
     display: flex;
     justify-content: center;
     height: 775px;
+    @media (max-width: 1330px) {
+        height: 710px;
+    }
 `;
 
 export const Container = styled.div`
@@ -29,7 +32,9 @@ export const HeadingText = styled.h1`
     position: relative;
     font-size: 85px;
     font-weight: 600;
-
+    @media (max-width: 1330px) {
+        font-size: 75px;
+    }
 `;
 
 export const Circle = styled.div`
@@ -40,6 +45,10 @@ export const Circle = styled.div`
     position: absolute;
     right: 12%;
     top: 60px;
+    @media (max-width: 1330px) {
+        width: 90px;
+        height: 90px;
+    }
 `;
 
 export const Circle2 = styled.div`
@@ -55,4 +64,7 @@ export const Circle2 = styled.div`
 export const SubHeadingText = styled.h2`
     color: #1F6AFF;
     font-size: 40;
+    @media (max-width: 1330px) {
+        font-size: 36px;
+    }
 `;
