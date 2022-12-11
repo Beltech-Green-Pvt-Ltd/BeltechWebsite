@@ -187,6 +187,9 @@ export const CopyRightText = styled.div`
 export const TermAndConditionContainer2 = styled.div`
     padding-left: 25px;
     padding-right: 25px;
+    @media (min-width: 760px) {
+        display: none;
+    }
 `;
 
 export const TNC2 = styled.div`
@@ -198,6 +201,9 @@ export const TNCLink2 = styled(Link)`
     color: white;
     padding-right: 14px;
     font-size: 13px;
+    @media (min-width: 760px) {
+        display: none;
+    }
 `;
 
 export const Line2 = styled.div`
@@ -206,9 +212,15 @@ export const Line2 = styled.div`
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
+    @media (min-width: 760px) {
+        display: none;
+    }
 `;
 
 export const CopyRightText2 = styled.div`
     font-size: 13px;
     color: white;
+    @media (min-width: 760px) {
+        display: none;
+    }
 `;
