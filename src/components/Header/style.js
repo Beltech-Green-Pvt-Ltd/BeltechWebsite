@@ -52,6 +52,9 @@ export const MenuContainer = styled.div`
 export const MenuItem = styled.div`
     margin-left: 30px;
     font-family: 'Urbanist', sans-serif;
+    @media (max-width: 760px) {
+        display: none;
+    }
 `;
 
 
@@ -73,4 +76,21 @@ export const UnderLine = styled.div`
     background-color: ${Colors.primaryColor};
     height: 3px;
     width: 100%;
+`;
+
+export const HamIcon = styled.img`
+    width: 30px;
+    @media (min-width: 760px) {
+        display: none;
+    }
+`;
+
+export const HamMenuContainer = styled.div`
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255,0.8);
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1000;
 `;
