@@ -9,7 +9,7 @@ export const MainContainer = styled.div`
     height: 360px;
   }
   @media (max-width: 760px) {
-    height: 250px;
+    height: 210px;
   }
 `;
 
@@ -187,6 +187,8 @@ export const CopyRightText = styled.div`
 export const TermAndConditionContainer2 = styled.div`
     padding-left: 25px;
     padding-right: 25px;
+    position: relative;
+    top: -15px;
     @media (min-width: 760px) {
         display: none;
     }

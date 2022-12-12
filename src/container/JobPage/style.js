@@ -18,6 +18,16 @@ export const HeadingContainer = styled.div`
   z-index: 0;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 870px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media (max-width: 740px) {
+    padding: 28px 75px 28px 75px;
+  }
+  @media (max-width: 580px) {
+    padding: 23px 33px 23px 33px;
+  }
 `;
 
 export const HeadingSubContainer = styled.div`
@@ -34,10 +44,20 @@ export const Circle = styled.div`
   top: 19%;
   right: -5%;
   z-index: -1;
+  @media (max-width: 690px) {
+    width: 55px;
+    height: 55px;
+  }
 `;
 
 export const HeadingText = styled.h1`
   font-size: 40px;
+  @media (max-width: 942px) {
+    font-size: 36px;
+  }
+  @media (max-width: 690px) {
+    font-size: 30px;
+  }
 `;
 
 export const ApplyButton = styled(Link)`
@@ -61,6 +81,12 @@ export const UnderLine = styled.div`
 
 export const JobDescriptionContainer = styled.div`
   padding: 30px 108px 30px 108px;
+  @media (max-width: 740px) {
+    padding: 28px 75px 28px 75px;
+  }
+  @media (max-width: 580px) {
+    padding: 23px 33px 23px 33px;
+  }
 `;
 
 
@@ -88,6 +114,9 @@ export const Point = styled.div`
 
 export const PointText = styled.div`
     margin-left: 13px;
+    @media (max-width: 600px) {
+      font-size: 13px;
+  }
 `;
 
 export const Circle2 = styled.div`
