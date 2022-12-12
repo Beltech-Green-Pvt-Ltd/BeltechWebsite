@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const CarrerMainSearchContainer = styled.div`
   background: #f4f4fb;
@@ -6,6 +7,15 @@ export const CarrerMainSearchContainer = styled.div`
 
 export const CarrerSearchContainer = styled.div`
   padding: 20px 100px 0px 100px;
+  @media (max-width: 1300px) {
+    padding: 20px 60px 0px 60px;
+  }
+  @media (max-width: 1000px) {
+    padding: 20px 30px 0px 30px;
+  }
+  @media (max-width: 673px) {
+    padding: 20px 20px 0px 20px;
+  }
 `;
 
 export const SearchBar = styled.div`
@@ -76,6 +86,20 @@ export const JobsCardContainer = styled.div`
     padding-top: 10px;
     padding-right: 50px;
     cursor: pointer;
+    @media (max-width: 660px) {
+      display: none;
+    }
+`;
+export const JobsCardContainer2 = styled(Link)`
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 50px;
+    cursor: pointer;
+    @media (min-width: 661px) {
+      display: none;
+    }
+    text-decoration: none;
 `;
 
 export const JobsName = styled.h2`
@@ -85,9 +109,20 @@ export const JobsName = styled.h2`
   color: #404040;
 `;
 
+export const JobsName2 = styled.h2`
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  padding-left: 15px;
+  color: #404040;
+`;
+
 export const JobDetails = styled.div``;
 
 export const JobsCardDetails = styled.div`
+
+`;
+export const JobsCardDetails2 = styled.div`
 
 `;
 
@@ -100,6 +135,16 @@ export const LocationContainer = styled.div`
     color: #404040;
     margin-bottom: 9px;
     padding-left: 4px;
+`;
+export const LocationContainer2 = styled.div`
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    /* line-height: 19px; */
+    color: #404040;
+    margin-bottom: 9px;
+    padding-left: 20px;
 `;
 
 export const PostedContainer = styled.div`
@@ -120,4 +165,5 @@ export const Clock = styled.img``
 
 export const JobsFlex = styled.div`
     display: flex;
+    justify-content: center;
 `;

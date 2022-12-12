@@ -10,6 +10,9 @@ export const JobDescriptionDetailsContainer = styled.div`
   border-radius: 8px;
   padding-bottom: 50px;
   margin-bottom: 40px;
+  @media (max-width: 660px) {
+    display: none;
+  }
 `;
 
 export const NoJobDescriptionDetailsContainer = styled.div`
@@ -17,6 +20,9 @@ export const NoJobDescriptionDetailsContainer = styled.div`
   width: 816px;
   margin-left: 20px;
   margin-top: 50px;
+  @media (max-width: 660px) {
+    display: none;
+  }
 `;
 
 export const NoJobContainer = styled.div`
@@ -43,6 +49,9 @@ export const HeaderContainer = styled.div`
   padding: 48px 48px 0px 48px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1000px) {
+    padding: 30px 20px 0px 20px;
+  }
 `;
 
 export const JobsName = styled.div`
@@ -50,12 +59,18 @@ export const JobsName = styled.div`
   font-size: 28px;
   line-height: 38px;
   color: #130f26;
+  @media (max-width: 1000px) {
+    font-size: 23px;
+  }
 `;
 
 export const ApplyContainer = styled.div`
   padding: 0px 48px 0px 48px;
   margin-top: 20px;
   margin-bottom: 20px;
+  @media (max-width: 1000px) {
+    padding: 0px 20px 0px 20px;
+  }
 `;
 
 export const ApplyButton = styled(Link)`
@@ -78,6 +93,9 @@ export const DescriptionContainer = styled.div``;
 export const RoleResponsibiltiesContainer = styled.div`
   padding: 0px 48px 0px 48px;
   margin-top: 35px;
+  @media (max-width: 1000px) {
+    padding: 0px 30px 0px 30px;
+  }
 `;
 
 export const JobHeadings = styled.div`
@@ -85,6 +103,10 @@ export const JobHeadings = styled.div`
   font-size: 24px;
   line-height: 29px;
   color: #161616;
+  @media (max-width: 1000px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 export const PointsContainer = styled.div`

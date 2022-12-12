@@ -20,6 +20,10 @@ import {
   Clock,
   LocationText,
   JobsFlex,
+  JobsCardContainer2,
+  JobsCardDetails2,
+  LocationContainer2,
+  JobsName2
 } from "./style";
 import JobDescription from "../JobDescription";
 import searchIcon from "../../assets/SearchIcon.svg";
@@ -32,6 +36,7 @@ import { locationMap } from "../../assets/carrerCsv/carrer";
 const JobsCard = ({ data, setSelectedJob, index, selectedJob}) => {
   return (
     <>
+    {console.log("Hello Data,", data)}
       <JobsCardContainer onClick={() => setSelectedJob(index)}>
         <JobsName style={{color: selectedJob === index ? 'red': ''}}>{data.position}</JobsName>
         <JobsCardDetails>
@@ -46,6 +51,20 @@ const JobsCard = ({ data, setSelectedJob, index, selectedJob}) => {
           <PostedContainer></PostedContainer>
         </JobsCardDetails>
       </JobsCardContainer>
+      <JobsCardContainer2 to={`/job/${data.jobId}`} target="_blank" rel="noopener noreferrer">
+      <JobsName2 >{data.position}</JobsName2>
+        <JobsCardDetails2>
+          <LocationContainer2>
+            <Location src={LocationIcon} />
+            <LocationText>{locationMap[data.Location]}</LocationText>
+          </LocationContainer2>
+          <LocationContainer2>
+            <Location src={ClockIcon} />
+            <LocationText>2 days ago</LocationText>
+          </LocationContainer2>
+          <PostedContainer></PostedContainer>
+        </JobsCardDetails2>
+      </JobsCardContainer2>
       <Line />
     </>
   );
@@ -79,7 +98,6 @@ const CarrerSearch = () => {
               <JobFound>{`${data.length - 1} JOBS FOUND`}</JobFound>
               <Line />
             </JobListContainer>
-            {console.log("ravi", data)}
             {data.map((data, index) => {
                 return <JobsCard data={data} key={index} setSelectedJob={setSelectedJob} selectedJob={selectedJob} index={index}/>;
             })}
