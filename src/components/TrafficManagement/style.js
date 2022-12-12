@@ -26,12 +26,20 @@ export const Circle = styled.div`
     top: 10%;
     left: -4%;
     z-index: -1;
+    @media (max-width: 1120px) {
+      width: 60px;
+      height: 60px;
+      left: 7%;
+    }
 `;
 
 export const HeadingText = styled.h1`
-   font-size: 40px;
-   width: 500px;
-   text-align: center;
+  font-size: 40px;
+  width: 500px;
+  text-align: center;
+  @media (max-width: 1120px) {
+    font-size: 33px;
+  }
 `;
 
 export const ImpactContentContainer = styled.div`
@@ -58,6 +66,9 @@ export const GraphContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 1120px) {
+    max-width: 450px;
+  }
 `;
 
 export const TextContentContainer = styled.div`
@@ -65,16 +76,27 @@ export const TextContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: 1120px) {
+    max-width: 450px;
+    padding-left: 40px;
+  }
 `;
 
 export const Image = styled.img`
   margin-top: 45px;
   max-width: 471px;
+  @media (max-width: 1120px) {
+    max-width: 380px;
+    margin-top: 38px;
+  }
 `;
 
 export const TextContentHeading = styled.h1`
   font-size: 34px;
   font-weight: 700;
+  @media (max-width: 1120px) {
+    font-size: 30px;
+  }
 `;
 
 export const TextContentSubHeading = styled.div`
@@ -96,6 +118,9 @@ export const BulletPointContainer = styled.div`
 export const BulletPointText = styled.div`
   margin-left: 7px;
   font-size: 20px;
+  @media (max-width: 1120px) {
+    font-size: 17px;
+  }
 `;
 
 export const BackGroundCircle = styled.div`
@@ -105,6 +130,10 @@ export const BackGroundCircle = styled.div`
   background-color: #F9F9F9;
   position: absolute;
   z-index: -1;
+  @media (max-width: 1120px) {
+    width: 320px;
+    height: 320px;
+  }
 `;
 
 export const BackGroundCircle1 = styled.div`
@@ -114,6 +143,10 @@ export const BackGroundCircle1 = styled.div`
     background: rgba(255, 247, 217, 0.6);
     position: absolute;
     z-index: -1;
+    @media (max-width: 1120px) {
+      width: 380px;
+      height: 380px;
+    }
 `;
 
 export const GraphText = styled.div`
@@ -138,17 +171,26 @@ export const PercentageText = styled.div`
   font-size: 32px;
   font-weight: 700;
   margin-right: 4px;
+  @media (max-width: 1120px) {
+    font-size: 27px;
+  }
 `;
 
 export const DownArrow = styled.div`
   color: #35D5A4;
   font-size: 35px;
   margin-right: 10px;
+  @media (max-width: 1120px) {
+    font-size: 27px;
+  }
 `;
 
 export const AnalysisText = styled.div`
   font-size: 24px;
   font-weight: 700;
+  @media (max-width: 1120px) {
+    font-size: 20px;
+  }
 `;
 
 export const GraphAnalysisContainer = styled.div`
@@ -165,9 +207,16 @@ export const HoverDiv = styled.div`
   ${GraphAnalysisContainer}:hover & {
     display: block;
   }
+  @media (max-width: 1120px) {
+    width: 460px;
+    right: -98%;
+  }
 `;
 
 export const HoverImage = styled.img`
+  @media (max-width: 1120px) {
+    width: 390px;
+  }
 `;
 
 export const InfoIcon = styled.img`
@@ -181,12 +230,18 @@ export const GraphText1 = styled.div`
   position: relative;
   top: -120%;
   left: 5%;
+  @media (max-width: 1120px) {
+    width: 319px;
+  }
 `;
 
 export const AnalysisText1 = styled.div`
   font-size: 24px;
   font-weight: 700;
   display: flex;
+  @media (max-width: 1120px) {
+    font-size: 20px;
+  }
 `;
 
 export const HoverDiv2 = styled.div`
