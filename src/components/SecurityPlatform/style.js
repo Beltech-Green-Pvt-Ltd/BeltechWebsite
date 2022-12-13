@@ -37,7 +37,7 @@ export const Circle = styled.div`
 
 export const HeadingText = styled.h1`
   font-size: 40px;
-  width: 500px;
+  width: 522px;
   text-align: center;
   color: white;
   @media (max-width: 1127px) {

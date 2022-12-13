@@ -35,7 +35,7 @@ const SecurityPlatform = () => {
     <SecurityPlatformContainer>
       <HeadingContainer>
         <HeadingSubContainer>
-          <HeadingText>AI Driven Integrated Traffic Management</HeadingText>
+          <HeadingText>AI Driven Integrated Security Platform</HeadingText>
           <Circle />
         </HeadingSubContainer>
       </HeadingContainer>
