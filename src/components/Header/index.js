@@ -57,7 +57,7 @@ const Header = () => {
               {location.hash === "#impact" ? <UnderLine /> : <></>}
             </MenuItem>
             <MenuItem>
-              <Linked to="career">Carrer</Linked>
+              <Linked to="career">Career</Linked>
               {useMatch("/career") ? <UnderLine /> : <></>}
             </MenuItem>
             <MenuItem>
