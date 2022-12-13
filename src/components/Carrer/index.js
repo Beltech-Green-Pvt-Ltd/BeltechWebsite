@@ -36,8 +36,8 @@ const Carrer = () => {
             <Image3 src={Career3} />
           </ImageContainer>
           <CareerCTAContainer>
-                <CareerHeadingText>Your career journey starts from here</CareerHeadingText>
-                <CTA to="/career">Discover Career at Beltech</CTA>
+                <CareerHeadingText>Discover Career at Beltech AI</CareerHeadingText>
+                <CTA to="/career">View open roles</CTA>
           </CareerCTAContainer>
         </ContentContainer>
       </Container>
