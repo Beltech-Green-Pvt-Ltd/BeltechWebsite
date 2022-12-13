@@ -7,6 +7,12 @@ export const MainContainer = styled.div`
   @media (max-width: 1330px) {
     min-height: 270px;
   }
+  @media (max-width: 750px) {
+    min-height: 200px;
+  }
+  @media (max-width: 470px) {
+    min-height: 100px;
+  }
 `;
 
 export const Container = styled.div`
@@ -30,6 +36,12 @@ export const HeadingText = styled.div`
     @media (max-width: 1330px) {
       font-size: 60px;
     }
+    @media (max-width: 750px) {
+      font-size: 50px;
+  }
+  @media (max-width: 470px) {
+    font-size: 22px;
+  }
 `;
 
 export const SubHeadingText = styled.div`
@@ -38,4 +50,10 @@ export const SubHeadingText = styled.div`
     @media (max-width: 1330px) {
       font-size: 39px;
     }
+    @media (max-width: 750px) {
+      font-size: 34px;
+  }
+  @media (max-width: 470px) {
+    font-size: 14px;
+  }
 `;

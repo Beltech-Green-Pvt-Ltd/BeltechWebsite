@@ -13,7 +13,7 @@ import {
   Circle,
   HeadingSubContainer,
   CareerHeadingText,
-  CTA
+  CTA,
 } from "./style";
 import Career1 from "../../assets/Carrer1.png";
 import Career2 from "../../assets/Carrer2.png";
@@ -24,7 +24,7 @@ const Carrer = () => {
     <MainContainer>
       <Container>
         <HeadingContainer>
-            <HeadingSubContainer>
+          <HeadingSubContainer>
             <HeadingText>Career</HeadingText>
             <Circle />
           </HeadingSubContainer>
@@ -36,8 +36,8 @@ const Carrer = () => {
             <Image3 src={Career3} />
           </ImageContainer>
           <CareerCTAContainer>
-                <CareerHeadingText>Discover Career at Beltech AI</CareerHeadingText>
-                <CTA to="/career">View open roles</CTA>
+            <CareerHeadingText>Discover Career at Beltech AI</CareerHeadingText>
+            <CTA to="/career">View open roles</CTA>
           </CareerCTAContainer>
         </ContentContainer>
       </Container>

@@ -7,7 +7,9 @@ export const MainContainer = styled.div`
   height: 700px;
   @media (max-width: 1200px) {
         height: 600px;
-    }
+  }
+  @media (max-width: 1007px) {
+  }
 `;
 
 export const Container = styled.div`
@@ -21,6 +23,9 @@ export const HeadingText = styled.h1`
     z-index: 10;
     @media (max-width: 1330px) {
         font-size: 45px;
+    }
+    @media (max-width: 475px) {
+        font-size: 38px;
     }
 `;
 
@@ -40,6 +45,11 @@ export const ContentContainer = styled.div`
         padding-left: 70px;
         padding-right: 70px;
     }
+    @media (max-width: 1007px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const ImageContainer = styled.div`
@@ -47,10 +57,20 @@ export const ImageContainer = styled.div`
     width: 50%;
     flex-direction: row;
     position: relative;
+    @media (max-width: 1007px) {
+        width: auto;
+    }
 `;
 
 export const CareerCTAContainer = styled.div`
-
+    @media (max-width: 1007px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
 `;
 
 export const Image1 = styled.img`
@@ -61,6 +81,10 @@ export const Image1 = styled.img`
     @media (max-width: 1200px) {
         width: 160px;
     }
+    @media (max-width: 475px) {
+        width: 120px;
+    }
+
 `;
 
 export const Image2 = styled.img`
@@ -75,6 +99,10 @@ export const Image2 = styled.img`
         width: 160px;
         left: 140px;
     }
+    @media (max-width: 475px) {
+        width: 120px;
+        left: 110px;
+    }
 `;
 
 export const Image3 = styled.img`
@@ -86,6 +114,10 @@ export const Image3 = styled.img`
     @media (max-width: 1200px) {
         width: 160px;
         margin-left: 120px;
+    }
+    @media (max-width: 475px) {
+        width: 120px;
+        margin-left: 95px;
     }
 `;
 
@@ -109,6 +141,10 @@ export const Circle = styled.div`
         width: 70px;
         height: 70px;
     }
+    @media (max-width: 475px) {
+        width: 60px;
+        height: 60px;
+    }
 `;
 
 export const HeadingSubContainer = styled.div`
@@ -125,6 +161,12 @@ export const CareerHeadingText = styled.h2`
     }
     @media (max-width: 1200px) {
         font-size: 25px;
+    }
+    @media (max-width: 1007px) {
+        text-align: center;
+    }
+    @media (max-width: 475px) {
+        font-size: 22px;
     }
 `;
 
@@ -147,5 +189,8 @@ export const CTA = styled(Link)`
     @media (max-width: 1200px) {
         font-size: 20px;
         width: 240px;
+    }
+    @media (max-width: 475px) {
+        margin-top: 48px;
     }
 `;

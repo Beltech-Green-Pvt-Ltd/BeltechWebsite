@@ -9,6 +9,9 @@ export const MainContainer = styled.div`
   @media (max-width: 1330px) {
     height: 340px;
   }
+  @media (max-width: 610px) {
+    height: 200px;
+  }
 `;
 
 export const Container = styled.div`
@@ -19,6 +22,9 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 850px) {
+    padding: 0px 10px 0px 10px;
+  }
 `;
 
 export const HeadingText = styled.div`
@@ -28,6 +34,13 @@ export const HeadingText = styled.div`
     font-weight: 700;
     @media (max-width: 1330px) {
       font-size: 45px;
+    }
+    @media (max-width: 850px) {
+      font-size: 38px;
+    }
+    @media (max-width: 610px) {
+      font-size: 24px;
+      margin-bottom: 10px;
     }
 `;
 
@@ -40,11 +53,19 @@ export const SubHeadingText = styled.div`
     @media (max-width: 1330px) {
       font-size: 28px;
     }
+    @media (max-width: 610px) {
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
 `;
 
 export const Text = styled.div`
     font-size: 22px;
+    text-align: center;
     @media (max-width: 1330px) {
       font-size: 21px;
+    }
+    @media (max-width: 610px) {
+      font-size: 12px;
     }
 `;
