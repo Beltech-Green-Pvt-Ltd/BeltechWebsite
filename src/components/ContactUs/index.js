@@ -52,14 +52,20 @@ const ContactForm = () => {
     console.log("Here we are coming");
     if(!name){
       setNameError("Please Enter Name");
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
       return false;
     }else if(!email || !validateEmail(email)){
       setEmailError("Please enter a valid email");
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
       return false;
     }else if(!phoneNumber){
       setPhoneNumberError("Please enter a valid phone number");
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      return false;
     }else if(!organisationName){
       setOrganisationNameError("Please enter organisation name");
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      return false;
     }
     if(nameError || emailError || phoneNumberError || organisationNameError){
       return false;
