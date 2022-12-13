@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { HamMenuContainer, CrossIcon, MenuContainer, MenuItem, Menu, UnderLine } from "./style";
+import { HamMenuContainer, CrossIcon, MenuContainer, MenuItem, Menu, UnderLine, HeadingContainer, BeltechLogoContainer } from "./style";
 import { useMatch, useLocation } from "react-router-dom";
 import CrossSvg from '../../assets/cross.svg';
+import BeltechLogo from '../../assets/BeltechLogo.png';
 
 const HamMenu = ({setHamMenu}) => {
 
@@ -27,7 +28,10 @@ const HamMenu = ({setHamMenu}) => {
 
   return (
     <HamMenuContainer>
+      <HeadingContainer>
+        <BeltechLogoContainer src={BeltechLogo}/>
         <CrossIcon src={CrossSvg} onClick={() => crossIconHandle()}/>
+      </HeadingContainer>
         <MenuContainer>
           <MenuItem onClick={closeMenu}>
             <Menu to="/">Home</Menu>

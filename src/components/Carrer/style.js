@@ -131,7 +131,11 @@ export const CareerHeadingText = styled.h2`
 export const CTA = styled(Link)`
     background-color: #006AE9;
     height: 80px;
-    padding: 15px 45px 15px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 56px;
     border: none;
     color: white;
     font-size: 28px;
@@ -142,6 +146,6 @@ export const CTA = styled(Link)`
     }
     @media (max-width: 1200px) {
         font-size: 20px;
-        padding: 15px 38px 15px 38px;
+        width: 240px;
     }
 `;

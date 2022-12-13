@@ -5,6 +5,9 @@ export const MainContainer = styled.div`
   justify-content: center;
   min-height: 1900px;
   display: flex;
+  @media (max-width: 1200px) {
+    min-height: 1600px;
+  }
 `;
 
 export const Container = styled.div`
@@ -33,10 +36,18 @@ export const Circle = styled.div`
     top: 19%;
     left: -15%;
     z-index: -1;
+    @media (max-width: 1200px) {
+      width: 60px;
+      height: 60px;
+      top: 25%;
+    }
 `;
 
 export const HeadingText = styled.h1`
    font-size: 50px;
+   @media (max-width: 1200px) {
+      font-size: 44px;
+    }
 `;
 
 export const ImpactContentContainer = styled.div`
@@ -48,6 +59,11 @@ export const ContentContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 135px;
+  @media (max-width: 1007px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const ContentContainer2 = styled.div`
@@ -55,6 +71,15 @@ export const ContentContainer2 = styled.div`
   flex-direction: row-reverse;
   justify-content: space-around;
   margin-bottom: 135px;
+  @media (max-width: 1200px) {
+    margin-bottom: 120px;
+    padding-left: 25px;
+  }
+  @media (max-width: 1007px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const GraphContentContainer = styled.div`
@@ -73,6 +98,9 @@ padding-top: 30px;
 export const Image = styled.img`
   margin-top: 45px;
   max-width: 471px;
+  @media (max-width: 1200px) {
+    max-width: 350px;
+  }
 `;
 
 export const TextContentHeading = styled.h1`
@@ -108,6 +136,10 @@ export const BackGroundCircle = styled.div`
   background-color: #F9F9F9;
   position: absolute;
   z-index: -1;
+  @media (max-width: 1200px) {
+    width: 320px;
+    height: 320px;
+  }
 `;
 
 export const GraphText = styled.div`
@@ -143,17 +175,26 @@ export const PercentageText = styled.div`
   font-size: 32px;
   font-weight: 700;
   margin-right: 4px;
+  @media (max-width: 1200px) {
+    font-size: 28px;
+  }
 `;
 
 export const DownArrow = styled.div`
   color: #35D5A4;
   font-size: 35px;
   margin-right: 10px;
+  @media (max-width: 1200px) {
+    font-size: 29px;
+  }
 `;
 
 export const AnalysisText = styled.div`
   font-size: 24px;
   font-weight: 700;
+  @media (max-width: 1200px) {
+    font-size: 21px;
+  }
 `;
 
 export const AnalysisText1 = styled.div`
