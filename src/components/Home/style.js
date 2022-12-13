@@ -54,11 +54,19 @@ export const Circle = styled.div`
     @media (max-width: 1330px) {
         width: 90px;
         height: 90px;
+        right: 12%;
     }
     @media (max-width: 1200px) {
         width: 80px;
         height: 80px;
         top: 54px;
+        right: 12%;
+    }
+    @media (min-width: 1500px) {
+        width: 100px;
+        height: 100px;
+        top: 58px;
+        right: 27%;
     }
 `;
 
