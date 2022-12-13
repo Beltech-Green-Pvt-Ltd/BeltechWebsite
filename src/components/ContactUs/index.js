@@ -50,6 +50,17 @@ const ContactForm = () => {
 
   const formValidation = () =>{
     console.log("Here we are coming");
+    if(!name){
+      setNameError("Please Enter Name");
+      return false;
+    }else if(!email || !validateEmail(email)){
+      setEmailError("Please enter a valid email");
+      return false;
+    }else if(!phoneNumber){
+      setPhoneNumberError("Please enter a valid phone number");
+    }else if(!organisationName){
+      setOrganisationNameError("Please enter organisation name");
+    }
     if(nameError || emailError || phoneNumberError || organisationNameError){
       return false;
     }else{
