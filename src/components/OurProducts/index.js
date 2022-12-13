@@ -13,6 +13,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import Product1 from "./Product1";
 import Product2 from "./Product2";
+import Product3 from './Product3';
 import Next from '../../assets/Right.png';
 import Left from '../../assets/Left.png';
 
@@ -47,6 +48,7 @@ const OurProducts = () => {
         showStatus={false}>
             <Product1 />
             <Product2 />
+            <Product3 />
         </Carousel>
       </Container>
     </MainContainer>

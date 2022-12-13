@@ -9,33 +9,26 @@ import {
   List,
   ListText,
   KnowMoreButton,
+  Image2
 } from "./style";
-import Traffic from "../../assets/Traffic.png";
+import TrafficManagment from "../../assets/TrafficManagement.png";
 
 const Product1 = () => {
   return (
     <ProductContainer>
-      <Image src={Traffic} />
+      <Image2 src={TrafficManagment} />
       <InfoContainer>
         <ProductHeadingText>
-          AI Driven Integrated Security Platform
+          AI Driven Traffic Management Platform
         </ProductHeadingText>
         <ListContainer>
           <List>
             <BulletPoint />
-            <ListText>Detects suspicious/illegal activities</ListText>
+            <ListText>Reduces traffic congestion by controlling traffic signals using AI</ListText>
           </List>
           <List>
             <BulletPoint />
-            <ListText>Criminal Detection</ListText>
-          </List>
-          <List>
-            <BulletPoint />
-            <ListText>Suspicious people detection</ListText>
-          </List>
-          <List>
-            <BulletPoint />
-            <ListText>Customisable intelligence parameters</ListText>
+            <ListText>Automatically detects traffic violations and generates challans</ListText>
           </List>
         </ListContainer>
         <KnowMoreButton to="/product#trafficManagement">Know more</KnowMoreButton>
