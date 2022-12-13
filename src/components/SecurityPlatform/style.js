@@ -3,7 +3,7 @@ import Color from "../../styles/color";
 
 export const SecurityPlatformContainer = styled.div`
   background: linear-gradient(159.8deg, #151a4b 33.48%, #03336c 138.38%);
-  padding-bottom: 200px;
+  padding-bottom: 10px;
 `;
 
 export const HeadingContainer = styled.div`
@@ -28,6 +28,11 @@ export const Circle = styled.div`
   top: 10%;
   left: -4%;
   z-index: -1;
+  @media (max-width: 1127px) {
+    width: 65px;
+    height: 65px;
+    left: 3%;
+  }
 `;
 
 export const HeadingText = styled.h1`
@@ -35,6 +40,9 @@ export const HeadingText = styled.h1`
   width: 500px;
   text-align: center;
   color: white;
+  @media (max-width: 1127px) {
+    font-size: 35px;
+  }
 `;
 
 export const SecurityContentContainer = styled.div`
@@ -61,6 +69,9 @@ export const GraphContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 1127px) {
+    max-width: 480px;
+  }
 `;
 
 export const TextContentContainer = styled.div`
@@ -74,11 +85,20 @@ export const TextContentContainer = styled.div`
 export const Video = styled.video`
   margin-top: 45px;
   max-width: 471px;
+  @media (max-width: 1127px) {
+    max-width: 430px;
+  }
+  @media (max-width: 935px) {
+    max-width: 300px;
+  }
 `;
 
 export const TextContentHeading = styled.h1`
   font-size: 34px;
   font-weight: 700;
+  @media (max-width: 1127px) {
+    font-size: 28px;
+  }
 `;
 
 export const TextContentSubHeading = styled.div`
@@ -89,6 +109,10 @@ export const BulletPoint = styled.div`
   min-width: 10px;
   min-height: 10px;
   border-radius: 5px;
+  @media (max-width: 1127px) {
+    min-width: 8px;
+    min-height: 8px;
+  }
 `;
 
 export const BulletPointContainer = styled.div`
@@ -96,10 +120,14 @@ export const BulletPointContainer = styled.div`
   align-items: center;
 `;
 
-export const BulletPointText = styled.h2`
+export const BulletPointText = styled.div`
   margin-left: 7px;
   font-size: 20px;
   font-weight: 500;
+  margin-bottom: 10px;
+  @media (max-width: 1127px) {
+    font-size: 16px;
+  }
 `;
 
 export const BackGroundCircle = styled.div`

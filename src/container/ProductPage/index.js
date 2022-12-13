@@ -101,11 +101,11 @@ const ProductPage = () => {
                 Security
             {active === 1 ? <UnderLine /> : <></>}    
             </Menu>
-            <Menu style={{color: active === 2 ? Colors.primaryColor: "black"}} to="#smartcity">
+            {/* <Menu style={{color: active === 2 ? Colors.primaryColor: "black"}} to="#smartcity">
                 
                 Smart City
                 {active === 2 ? <UnderLine /> : <></>}
-                </Menu>
+                </Menu> */}
             <Menu style={{color: active === 3 ? Colors.primaryColor: "black"}} to="#tourismplatform">
                 
                 Tourism platform
