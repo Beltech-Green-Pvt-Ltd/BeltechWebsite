@@ -25,7 +25,7 @@ import {
   DownArrow,
   AnalysisText
 } from "./style";
-import Fight from '../../assets/Fight.png';
+import Intrusion from '../../assets/video/Intrusion2.mp4';
 import Security from '../../assets/video/security.mp4';
 import WomanSecurity from '../../assets/video/women_security.mp4';
 import CriminalDetection from '../../assets/video/criminalDetection.mp4';
@@ -131,7 +131,7 @@ const SecurityPlatform = () => {
           <ContentContainer>
             <GraphContentContainer>
               <BackGroundCircle1 />
-              <Video src={Fight} controls/>
+              <Video src={Intrusion} controls autoPlay muted loop/>
             </GraphContentContainer>
             <TextContentContainer>
               <TextContentHeading>Intrusion Detection</TextContentHeading>
