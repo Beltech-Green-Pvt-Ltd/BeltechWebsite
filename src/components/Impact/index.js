@@ -29,7 +29,8 @@ import {
   HoverImage,
   GraphText1,
   HoverDiv2,
-  AnalysisText1
+  AnalysisText1,
+  TextContentHeading2
 } from "./style";
 import Graph1 from "../../assets/Graph1.png";
 import Graph2 from "../../assets/Graph2.png";
@@ -50,6 +51,7 @@ const Impact = () => {
         </HeadingContainer>
         <ImpactContentContainer>
           <ContentContainer>
+            <TextContentHeading2>Traffic Management System</TextContentHeading2>
             <GraphContentContainer>
               <BackGroundCircle />
               <Image src={Graph2} />
@@ -109,6 +111,7 @@ const Impact = () => {
             </TextContentContainer>
           </ContentContainer>
           <ContentContainer2>
+          <TextContentHeading2>Traffic Violation System</TextContentHeading2>
             <GraphContentContainer>
               <BackGroundCircle />
               <Image src={Graph3} />
@@ -173,6 +176,7 @@ const Impact = () => {
             </TextContentContainer>
           </ContentContainer2>
           <ContentContainer>
+          <TextContentHeading2>Reduction in Toxic Emissions</TextContentHeading2>
             <GraphContentContainer>
               <BackGroundCircle />
               <Image src={Graph1} />
