@@ -5,7 +5,9 @@ import {
   HeadingText,
   MainContainer,
   ViewAllButton,
+  MViewAllButton,
   ViewAllButtonContainer,
+  MViewAllButtonContainer,
   NextIcon,
   PrevIcon
 } from "./style";
@@ -50,6 +52,12 @@ const OurProducts = () => {
             <Product2 />
             <Product3 />
         </Carousel>
+        <MViewAllButtonContainer>
+          <MViewAllButton to="/product">
+            <div>View All</div>
+            <div>&#8594;</div>
+          </MViewAllButton>
+        </MViewAllButtonContainer>
       </Container>
     </MainContainer>
   );

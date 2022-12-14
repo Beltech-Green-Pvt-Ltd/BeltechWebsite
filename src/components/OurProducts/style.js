@@ -11,6 +11,9 @@ export const MainContainer = styled.div`
   @media (max-width: 1200px) {
     height: 760px;
   }
+  @media (max-width: 1007px) {
+    height: 880px;
+  }
 `;
 
 export const Container = styled.div`
@@ -27,6 +30,9 @@ export const HeadingContainer = styled.div`
   @media (max-width: 1200px) {
     margin-top: 65px;
   }
+  @media (max-width: 1007px) {
+    margin-top: 40px;
+  }
 `;
 
 export const HeadingText = styled.div`
@@ -37,12 +43,24 @@ export const HeadingText = styled.div`
   @media (max-width: 1200px) {
     font-size: 45px;
   }
+  @media (max-width: 1007px) {
+    font-size: 40px;
+  }
 `;
 
 export const ViewAllButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   margin-right: 100px;
+  position: relative;
+  @media (max-width: 1007px) {
+    display: none;
+  }
+`;
+
+export const MViewAllButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
   position: relative;
 `;
 
@@ -56,9 +74,6 @@ export const ViewAllButton = styled(Link)`
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-
-  /* identical to box height */
-  letter-spacing: -0.3px;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -73,6 +88,24 @@ export const ViewAllButton = styled(Link)`
     top: -40px;
   }
 `;
+export const MViewAllButton = styled(Link)`
+  width: 120px;
+  height: 40px;
+
+  border: 3px solid #5277f7;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 29px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: -55px;
+  text-decoration: none;
+`;
 
 export const ProductContainer = styled.div`
   width: 100%;
@@ -82,6 +115,23 @@ export const ProductContainer = styled.div`
   margin-top: 10px;
   @media (max-width: 1200px) {
     margin-top: 0px;
+  }
+  @media (max-width: 1007px) {
+    display: none;
+  }
+`;
+
+export const MProductContainer = styled.div`
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+  margin-bottom: 40px;
+  @media (max-width: 1007px) {
+    display: block;
+  }
+  @media (min-width: 1008px){
+    display: none;
   }
 `;
 
@@ -97,6 +147,10 @@ export const Image = styled.img`
     width: 360px !important;
     height: 300px;
   }
+`;
+
+export const MImage = styled.img`
+  width: 360px !important;
 `;
 
 export const Image2 = styled.img`
@@ -126,17 +180,34 @@ export const InfoContainer = styled.div`
   }
 `;
 
+export const MInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  margin: auto;
+`;
+
 export const ProductHeadingText = styled.div`
   font-weight: 800;
   font-size: 35px;
   line-height: 48px;
-  letter-spacing: -0.3px;
   color: white;
   text-align: left;
   width: 455px;
   @media (max-width: 1330px) {
     font-size: 32px;
   }
+`;
+
+export const MProductHeadingText = styled.div`
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 44px;
+  color: white;
+  text-align: left;
+  margin-top: 10px;
 `;
 
 export const BulletPoint = styled.div`
@@ -182,7 +253,6 @@ export const KnowMoreButton = styled(Link)`
   line-height: 29px;
 
   /* identical to box height */
-  letter-spacing: -0.3px;
   margin-top: 20px;
   text-decoration: none;
   display: flex;
@@ -192,6 +262,22 @@ export const KnowMoreButton = styled(Link)`
     width: 120px;
     font-size: 19px;
   }
+`;
+
+export const MKnowMoreButton = styled(Link)`
+  background-color: ${Color.primaryColor};
+  border-radius: 8px;
+  width: 140px;
+  height: 45px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  margin-top: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const NextIcon = styled.img`

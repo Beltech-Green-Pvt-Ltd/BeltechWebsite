@@ -18,7 +18,6 @@ import {
   BulletPointText,
   ContentContainer2,
   BackGroundCircle,
-  GraphText,
   GraphAnalysis,
   PercentageText,
   DownArrow,
