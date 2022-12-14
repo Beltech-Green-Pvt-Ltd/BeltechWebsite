@@ -18,6 +18,9 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0px 97px 0px 97px;
+  @media (max-width: 570px) {
+    padding: 0px 30px 0px 30px;
+  }
 `;
 
 export const HeadingText = styled.div`
@@ -64,7 +67,11 @@ export const AboutUsContent = styled.div`
 export const Image = styled.img`
   width: 104px;
   @media (max-width: 1007px) {
+    margin-bottom: 6px;
     width: 80px;
+  }
+  @media (max-width: 570px) {
+    width: 50px;
   }
 `;
 
@@ -73,5 +80,8 @@ export const Text = styled.div`
   margin-left: 25px;
   @media (max-width: 1007px) {
     text-align: center;
+  }
+  @media (max-width: 570px) {
+    font-size: 16px;
   }
 `;

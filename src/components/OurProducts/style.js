@@ -18,7 +18,7 @@ export const MainContainer = styled.div`
     height: 820px;
   }
   @media (max-width: 520px) {
-    height: 655px;
+    height: 720px;
   }
 `;
 
@@ -51,6 +51,9 @@ export const HeadingText = styled.div`
   }
   @media (max-width: 1007px) {
     font-size: 40px;
+  }
+  @media (max-width: 570px) {
+    font-size: 30px;
   }
 `;
 
