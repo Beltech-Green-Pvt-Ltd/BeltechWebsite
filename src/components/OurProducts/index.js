@@ -9,7 +9,9 @@ import {
   ViewAllButtonContainer,
   MViewAllButtonContainer,
   NextIcon,
-  PrevIcon
+  PrevIcon,
+  NextButton,
+  PrevButton
 } from "./style";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -35,16 +37,16 @@ const OurProducts = () => {
         <Carousel 
         renderArrowNext={(clickHandler, hasNext, labelPrev) => 
           hasNext && (
-            <button onClick={clickHandler} style={{background: 'transparent', position: 'absolute' ,top: '49%', right: '40px', border: 'none', zIndex: 10}}>
+            <NextButton onClick={clickHandler}>
               <NextIcon src={Next} />
-            </button>
+            </NextButton>
           )
         }
         renderArrowPrev={(clickHandler, hasPrev, labelPrev) =>
           hasPrev && (
-            <button onClick={clickHandler} style={{background: 'transparent', position: 'absolute' ,top: '49%', left: '10px', border: 'none', zIndex: 10}}>
-            <PrevIcon src={Left} />
-            </button>
+            <PrevButton onClick={clickHandler}>
+              <PrevIcon src={Left} />
+            </PrevButton>
           )
         }
         showStatus={false}>

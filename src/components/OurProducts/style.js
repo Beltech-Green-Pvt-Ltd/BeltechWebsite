@@ -14,6 +14,12 @@ export const MainContainer = styled.div`
   @media (max-width: 1007px) {
     height: 880px;
   }
+  @media (max-width: 845px) {
+    height: 820px;
+  }
+  @media (max-width: 520px) {
+    height: 655px;
+  }
 `;
 
 export const Container = styled.div`
@@ -59,9 +65,13 @@ export const ViewAllButtonContainer = styled.div`
 `;
 
 export const MViewAllButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  display: none;
   position: relative;
+  @media (max-width: 1007px) {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
 `;
 
 export const ViewAllButton = styled(Link)`
@@ -105,6 +115,12 @@ export const MViewAllButton = styled(Link)`
   position: absolute;
   top: -55px;
   text-decoration: none;
+  @media (max-width: 570px) {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100px;
+    height: 35px;
+  }
 `;
 
 export const ProductContainer = styled.div`
@@ -133,6 +149,9 @@ export const MProductContainer = styled.div`
   @media (min-width: 1008px){
     display: none;
   }
+  @media (max-width: 845px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const Image = styled.img`
@@ -151,6 +170,12 @@ export const Image = styled.img`
 
 export const MImage = styled.img`
   width: 360px !important;
+  @media (max-width: 845px) {
+    width: 320px !important;
+  }
+  @media (max-width: 520px) {
+    width: 220px !important;
+  }
 `;
 
 export const Image2 = styled.img`
@@ -185,8 +210,11 @@ export const MInfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 360px;
+  width: 380px;
   margin: auto;
+  @media (max-width: 525px) {
+    width: 300px;
+  }
 `;
 
 export const ProductHeadingText = styled.div`
@@ -208,6 +236,14 @@ export const MProductHeadingText = styled.div`
   color: white;
   text-align: left;
   margin-top: 10px;
+  @media (max-width: 845px) {
+    font-size: 20px;
+  }
+  @media (max-width: 525px) {
+    width: 300px;
+    line-height: 30px;
+    font-size: 16px;
+  }
 `;
 
 export const BulletPoint = styled.div`
@@ -234,11 +270,19 @@ export const ListText = styled.div`
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
+  margin-left: 4px;
   padding: 8px;
   color: #d9d9d9;
   @media (max-width: 1200px) {
     padding: 6px;
     text-align: left;
+  }
+  @media (max-width: 845px) {
+    font-size: 18px;
+    padding: 4px;
+  }
+  @media (max-width: 570px) {
+    font-size: 14px;
   }
 `;
 
@@ -278,6 +322,11 @@ export const MKnowMoreButton = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 570px) {
+    font-size: 14px;
+    width: 120px;
+    height: 38px;
+  }
 `;
 
 export const NextIcon = styled.img`
@@ -286,6 +335,14 @@ export const NextIcon = styled.img`
   @media (max-width: 1330px) {
     width: 27px;
     height: 50px;
+  }
+  @media (max-width: 1000px) {
+    width: 24px;
+    height: 44px;
+  }
+  @media (max-width: 570px) {
+    width: 10px;
+    height: 20px;
   }
 `;
 
@@ -296,4 +353,33 @@ export const PrevIcon = styled.img`
     width: 27px;
     height: 50px;
   }
+  @media (max-width: 1000px) {
+    width: 24px;
+    height: 44px;
+  }
+  @media (max-width: 570px) {
+    width: 10px;
+    height: 20px;
+  }
+`;
+
+export const NextButton = styled.button`
+  background: transparent;
+  position: absolute;
+  top: 49%;
+  right: 40px;
+  border: none;
+  z-index: 10;
+  @media (max-width: 570px) {
+    right: 5px;
+  }
+`;
+
+export const PrevButton = styled.button`
+  background: transparent;
+  position: absolute;
+  top: 49%;
+  left: 5px;
+  border: none;
+  z-index: 10;
 `;

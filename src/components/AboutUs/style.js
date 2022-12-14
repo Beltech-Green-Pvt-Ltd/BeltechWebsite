@@ -32,6 +32,9 @@ export const HeadingText = styled.div`
     margin-bottom: 60px;
     margin-top: 60px;
   }
+  @media (max-width: 570px) {
+    font-size: 24px;
+  }
 `;
 
 export const ContentContainer = styled.div`

@@ -11,6 +11,24 @@ export const MainContainer = styled.div`
     @media (max-width: 1330px) {
         height: 650px;
     }
+    @media (max-width: 955px) {
+        height: 450px;
+    }
+    @media (max-width: 800px) {
+        height: 450px;
+    }
+    @media (max-width: 800px) {
+        height: 380px;
+    }
+    @media (max-width: 685px) {
+        height: 320px;
+    }
+    @media (max-width: 530px) {
+        height: 240px;
+    }
+    @media (max-width: 426px) {
+        height: 205px;
+    }
 `;
 
 export const Container = styled.div`
@@ -22,13 +40,23 @@ export const Container = styled.div`
 
 export const Image = styled.img`
     max-width: 64%;
+    @media (max-width: 955px) {
+        max-width: 55%;
+    }
 `;
 
 export const HeadingContainer = styled.div`
-    width: 450px;
+    /* width: 450px; */
     margin-left: 10%;
     margin-top: 138px;
     position: relative;
+    @media (max-width: 955px) {
+        margin-top: 50px;
+    }
+    @media (max-width: 530px) {
+        margin-top: 25px;
+        width: 50%;
+    }
 `;
 
 export const HeadingText = styled.h1`
@@ -40,6 +68,21 @@ export const HeadingText = styled.h1`
     }
     @media (max-width: 1200px) {
         font-size: 70px;
+    }
+    @media (max-width: 955px) {
+        font-size: 60px;
+    }
+    @media (max-width: 800px) {
+        font-size: 48px;
+    }
+    @media (max-width: 685px) {
+        font-size: 40px;
+    }
+    @media (max-width: 530px) {
+        font-size: 32px;
+    }
+    @media (max-width: 426px) {
+        font-size: 26px;
     }
 `;
 
@@ -68,6 +111,34 @@ export const Circle = styled.div`
         top: 58px;
         right: 27%;
     }
+    @media (max-width: 955px) {
+        width: 70px;
+        height: 70px;
+        right: 25%;
+        top: 48px;
+    }
+    @media (max-width: 800px) {
+        width: 60px;
+        height: 60px;
+        right: 29%;
+        top: 38px;
+    }
+    @media (max-width: 685px) {
+        width: 50px;
+        height: 50px;
+        top: 30px;
+        right: 32%;
+    }
+    @media (max-width: 530px) {
+        width: 40px;
+        height: 40px;
+        top: 25px;
+    }
+    @media (max-width: 426px) {
+        width: 35px;
+        height: 35px;
+        top: 20px;
+    }
 `;
 
 export const Circle2 = styled.div`
@@ -83,6 +154,15 @@ export const Circle2 = styled.div`
         height: 40px;
         bottom: 10%;
     }
+    @media (max-width: 800px) {
+        width: 30px;
+        height: 30px;
+        bottom: 12%;
+    }
+    @media (max-width: 530px) {
+        width: 15px;
+        height: 15px;
+    }
 `;
 
 export const SubHeadingText = styled.h2`
@@ -93,5 +173,11 @@ export const SubHeadingText = styled.h2`
     }
     @media (max-width: 1200px) {
         font-size: 30px;
+    }
+    @media (max-width: 800px) {
+        font-size: 25px;
+    }
+    @media (max-width: 530px) {
+        font-size: 16px;
     }
 `;

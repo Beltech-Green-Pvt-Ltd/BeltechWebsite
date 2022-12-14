@@ -105,7 +105,7 @@ const SecurityPlatform = () => {
               <Video src={WomanSecurity} controls autoPlay muted loop/>
             </GraphContentContainer>
             <TextContentContainer>
-              <TextContentHeading>Women Safty</TextContentHeading>
+              <TextContentHeading>Women Safety</TextContentHeading>
               <TextContentSubHeading>
                 <BulletPointContainer>
                   <BulletPoint />
