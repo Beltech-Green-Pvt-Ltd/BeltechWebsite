@@ -27,10 +27,6 @@ import {
   GraphContentContainer1,
 } from "./style";
 
-import Graph1 from "../../assets/Graph1.png";
-import AIDashboard from "../../assets/AIDashboard.png";
-import ChallanApp from "../../assets/ChallanApp.png";
-
 import AITourism from "../../assets/AITourism1.png";
 import SikkimTourismApp from "../../assets/SikkimtourismApp.png";
 
