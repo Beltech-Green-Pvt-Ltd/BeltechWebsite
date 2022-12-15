@@ -10,6 +10,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import SpinnerDiv from "./components/LoadingContainer";
 import JobPage from "./container/JobPage";
 
+//For detecting User agent
+import {isMobile} from 'react-device-detect';
+
 //Importing Component
 const Home = lazy(() => import("./container/HomePage"));
 const Carrer = lazy(() => import("./container/CarrerPage"));
@@ -18,6 +21,7 @@ const Product = lazy(() => import("./container/ProductPage"));
 const Apply  = lazy(() => import("./container/ApplyPage"));
 const PrivacyPolicy = lazy(() => import("./container/PrivacyPage"));
 const TermsAndCondition = lazy(() => import("./container/TermAndConditionPage"));
+const MobileTrafficManagement = lazy(() => import("./container/MobileTrafficManagement"));
 
 function App() {
   return (
@@ -33,6 +37,9 @@ function App() {
           <Route path="/contactus" element={<ContactUs />}/>
           <Route path="/product" element={<Product />}/>
           <Route path="/apply" element={<Apply />}/>
+          {isMobile && (<Route path="/trafficManagement" element={<MobileTrafficManagement />}/>)}
+          {isMobile && (<Route path="/securityPlatform" element={<h2>Security Platform</h2>}/>)}
+          {isMobile && (<Route path="/tourismPlatform" element={<h2>Tourism Platform</h2>}/>)}
           <Route path="/privacyPolicy" element={<PrivacyPolicy />}/>
           <Route path="/T&C" element={<TermsAndCondition />}/>
       </Routes>
