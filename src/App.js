@@ -22,6 +22,8 @@ const Apply  = lazy(() => import("./container/ApplyPage"));
 const PrivacyPolicy = lazy(() => import("./container/PrivacyPage"));
 const TermsAndCondition = lazy(() => import("./container/TermAndConditionPage"));
 const MobileTrafficManagement = lazy(() => import("./container/MobileTrafficManagement"));
+const MobileSecurityPlatform = lazy(() => import("./container/MobileSecurityPlatform"));
+const MobileTourismPlatform = lazy(() => import("./container/MobileTourismPlatform"));
 
 function App() {
   return (
@@ -38,8 +40,8 @@ function App() {
           <Route path="/product" element={<Product />}/>
           <Route path="/apply" element={<Apply />}/>
           {isMobile && (<Route path="/trafficManagement" element={<MobileTrafficManagement />}/>)}
-          {isMobile && (<Route path="/securityPlatform" element={<h2>Security Platform</h2>}/>)}
-          {isMobile && (<Route path="/tourismPlatform" element={<h2>Tourism Platform</h2>}/>)}
+          {isMobile && (<Route path="/securityPlatform" element={<MobileSecurityPlatform />}/>)}
+          {isMobile && (<Route path="/tourismPlatform" element={<MobileTourismPlatform />}/>)}
           <Route path="/privacyPolicy" element={<PrivacyPolicy />}/>
           <Route path="/T&C" element={<TermsAndCondition />}/>
       </Routes>
