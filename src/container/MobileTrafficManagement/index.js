@@ -41,7 +41,6 @@ import Graph3 from "../../assets/Graph1.png";
 import AIDashboard from "../../assets/AIDashboard.png";
 import ChallanApp from "../../assets/ChallanApp.png";
 import InfoImage from "../../assets/InfoIcon.svg";
-import HoverDivSvg from "../../assets/HoverDiv.svg";
 import HoverRightDivSvg from "../../assets/UnionRight.svg";
 
 const MobileTrafficManagement = () => {
@@ -68,7 +67,7 @@ const MobileTrafficManagement = () => {
                 </AnalysisText>
                 <InfoIcon src={InfoImage} />
                 <HoverDiv>
-                  <HoverImage src={HoverDivSvg} />
+                  {/* <HoverImage src={HoverDivSvg} /> */}
                   <GraphText1>
                     "This data is from the pilot which was conducted in Central
                     Business District - Bangalore, under the supervision of
@@ -131,7 +130,6 @@ const MobileTrafficManagement = () => {
                 </AnalysisText1>
               </GraphAnalysis>
               <HoverDiv2>
-                <HoverImage src={HoverRightDivSvg} />
                 <GraphText1>
                   "This data is from the pilot which was conducted in Central
                   Business District - Bangalore, under the supervision of

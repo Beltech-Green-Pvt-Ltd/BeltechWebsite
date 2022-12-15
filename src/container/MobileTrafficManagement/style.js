@@ -193,10 +193,13 @@ export const GraphAnalysisContainer = styled.div`
 
 export const HoverDiv = styled.div`
   position: absolute;
-  top: 70%;
-  width: 524px;
-  height: 50px;
+  top: 60%;
+  width: 320px;
+  height: 70px;
+  border: 0.5px solid grey;
+  padding: 10px;
   display: none;
+  background-color: white;
   ${GraphAnalysisContainer}:hover & {
     display: block;
   }
@@ -216,9 +219,6 @@ export const InfoIcon = styled.img`
 
 export const GraphText1 = styled.div`
   font-size: 12px;
-  position: relative;
-  top: -120%;
-  left: 5%;
 `;
 
 export const AnalysisText1 = styled.div`
@@ -229,11 +229,13 @@ export const AnalysisText1 = styled.div`
 
 export const HoverDiv2 = styled.div`
   position: absolute;
-  top: 75%;
-  left: 5%;
-  width: 524px;
-  height: 50px;
+  top: 60%;
+  width: 320px;
+  height: 70px;
+  border: 0.5px solid grey;
+  padding: 10px;
   display: none;
+  background-color: white;
   ${GraphAnalysisContainer}:hover & {
     display: block;
   }
