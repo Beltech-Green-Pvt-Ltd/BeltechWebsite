@@ -274,6 +274,12 @@ const TrafficManagement = () => {
                     Collect unpaid challans in a smart and effective way
                   </BulletPointText>
                 </BulletPointContainer>
+                <BulletPointContainer>
+                  <BulletPoint />
+                  <BulletPointText>
+                    Real-time update on traffic violations
+                  </BulletPointText>
+                </BulletPointContainer>
               </TextContentSubHeading>
             </TextContentContainer>
           </ContentContainer>

@@ -85,3 +85,11 @@ export const Text = styled.div`
     font-size: 16px;
   }
 `;
+
+export const BoldText = styled.span`
+   font-size: 22px;
+   font-weight: bold;
+  @media (max-width: 570px) {
+    font-size: 16px;
+  }
+`;

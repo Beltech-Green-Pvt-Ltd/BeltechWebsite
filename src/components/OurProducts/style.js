@@ -194,7 +194,7 @@ export const Image2 = styled.img`
 
 
 export const InfoContainer = styled.div`
-  background-image: url(${Ai});
+  /* background-image: url(${Ai}); */
   width: 688px;
   height: 570px;
   padding-top: 20px;

@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AboutUsContent,
+  BoldText,
   Container,
   ContentContainer,
   HeadingText,
@@ -26,7 +27,7 @@ const AboutUs = () => {
           <AboutUsContent>
             <Image src={CV} />
             <Text>
-             Our technological focus is Computer Vision
+             Our technological focus is <BoldText>Computer Vision</BoldText>
             </Text>
           </AboutUsContent>
         </ContentContainer>
