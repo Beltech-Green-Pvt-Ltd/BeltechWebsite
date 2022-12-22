@@ -16,11 +16,9 @@ export const Container = styled.div`
 export const ProductMenu = styled.div`
   width: 651px;
   height: 60px;
-  background: linear-gradient(
-    180deg,
-    #e0e7ff -37.62%,
-    rgba(237, 241, 255, 0) 123.76%
-  );
+  background: #FFFFFF;
+  border: 1px solid #D6D5D8;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
   border-radius: 100px;
   display: flex;
   justify-content: space-around;
@@ -33,8 +31,11 @@ export const ProductContainer = styled.div`
     display: flex;
     justify-content: center;
     position: sticky;
-    top: 100px;
+    top: 75px;
     z-index: 100;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 10px;
 `;
 
 export const Menu = styled(Link)`
