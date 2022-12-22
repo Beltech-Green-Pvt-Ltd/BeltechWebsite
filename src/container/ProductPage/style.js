@@ -14,8 +14,8 @@ export const Container = styled.div`
 `;
 
 export const ProductMenu = styled.div`
-  width: 651px;
-  height: 60px;
+  width: 525px;
+  height: 40px;
   background: #FFFFFF;
   border: 1px solid #D6D5D8;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
@@ -41,9 +41,8 @@ export const ProductContainer = styled.div`
 export const Menu = styled(Link)`
   text-decoration: none;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
-  letter-spacing: -0.3px;
   color: black;
 `;
 
