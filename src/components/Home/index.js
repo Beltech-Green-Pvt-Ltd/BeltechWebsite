@@ -9,7 +9,7 @@ import {
   SubHeadingText,
   Circle2,
 } from "./style";
-import backgroundImg from "../../assets/background.svg";
+import backgroundImg from "../../assets/Group.png";
 
 const Home = () => {
   return (
