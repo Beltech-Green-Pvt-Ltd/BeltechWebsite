@@ -80,7 +80,7 @@ export const ViewAllButton = styled(Link)`
   width: 170px;
   height: 50px;
 
-  border: 3px solid #5277f7;
+  border: 3px solid white;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
