@@ -376,6 +376,7 @@ export const PrevIcon = styled.img`
 `;
 
 export const NextButton = styled.button`
+  width: 50px;
   background: transparent;
   position: absolute;
   top: 49%;
@@ -385,6 +386,10 @@ export const NextButton = styled.button`
   @media (max-width: 570px) {
     right: 5px;
   }
+  @media (max-width: 570px) {
+    right: 5px;
+    width: 30px;
+  }
 `;
 
 export const PrevButton = styled.button`
@@ -392,6 +397,11 @@ export const PrevButton = styled.button`
   position: absolute;
   top: 49%;
   left: 50px;
+  width: 50px;
   border: none;
   z-index: 10;
+  @media (max-width: 570px) {
+    left: 5px;
+    width: 30px;
+  }
 `;
