@@ -27,14 +27,14 @@ export const CorporateOffice = styled.div`
   margin-top: 11px;
 `;
 
-export const CorporateOfficeContainer = styled.div``;
-
-export const RegistredOfficeContainer = styled.div`
+export const CorporateOfficeContainer = styled.div`
   margin-top: 101px;
   @media (max-width: 770px) {
     margin-top: 80px;
   }
 `;
+
+export const RegistredOfficeContainer = styled.div``;
 
 export const RegisterOfficeText = styled.div`
   font-weight: 400;
