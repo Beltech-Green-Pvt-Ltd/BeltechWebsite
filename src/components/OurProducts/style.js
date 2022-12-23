@@ -25,8 +25,7 @@ export const MainContainer = styled.div`
 export const Container = styled.div`
   max-width: 1580px;
   width: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    linear-gradient(232.44deg, #233c7b 36.39%, #2e1e89 79.05%);
+  background: #006AE9;
 `;
 
 export const HeadingContainer = styled.div`
@@ -126,8 +125,17 @@ export const MViewAllButton = styled(Link)`
   }
 `;
 
+export const DummyProductContainer = styled.div`
+
+`;
+
 export const ProductContainer = styled.div`
-  width: 100%;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  background-color: #1455a2;
+  position: relative;
+  left: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,9 +166,9 @@ export const MProductContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 540px !important;
+  width: 480px !important;
   margin-left: 100px;
-  height: 389px;
+  height: 360px;
   @media (max-width: 1330px) {
     width: 450px !important;
     height: 340px;
@@ -182,7 +190,7 @@ export const MImage = styled.img`
 `;
 
 export const Image2 = styled.img`
-  width: 600px !important;
+  width: 480px !important;
   margin-left: 40px;
   @media (max-width: 1330px) {
     width: 450px !important;
@@ -222,8 +230,8 @@ export const MInfoContainer = styled.div`
 
 export const ProductHeadingText = styled.div`
   font-weight: 800;
-  font-size: 35px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 42px;
   color: white;
   text-align: left;
   width: 455px;
@@ -250,7 +258,7 @@ export const MProductHeadingText = styled.div`
 `;
 
 export const BulletPoint = styled.div`
-  background-color: ${Color.primaryColor};
+  background-color: white;
   width: 8px;
   height: 8px;
   border-radius: 5px;
@@ -265,7 +273,7 @@ export const ListContainer = styled.div`
 
 export const List = styled.div`
   display: flex;
-  align-items: center;
+  align-items: baseline;
 `;
 
 export const ListText = styled.div`
@@ -274,6 +282,7 @@ export const ListText = styled.div`
   font-size: 20px;
   line-height: 26px;
   margin-left: 4px;
+  text-align: initial;
   padding: 8px;
   color: #d9d9d9;
   @media (max-width: 1200px) {
@@ -370,7 +379,7 @@ export const NextButton = styled.button`
   background: transparent;
   position: absolute;
   top: 49%;
-  right: 40px;
+  right: 50px;
   border: none;
   z-index: 10;
   @media (max-width: 570px) {
@@ -382,7 +391,7 @@ export const PrevButton = styled.button`
   background: transparent;
   position: absolute;
   top: 49%;
-  left: 5px;
+  left: 50px;
   border: none;
   z-index: 10;
 `;
