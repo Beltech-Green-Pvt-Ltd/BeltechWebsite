@@ -50,9 +50,9 @@ const OurProducts = () => {
           )
         }
         showStatus={false}>
+            <Product3 />
             <Product1 />
             <Product2 />
-            <Product3 />
         </Carousel>
         <MViewAllButtonContainer>
           <MViewAllButton to="/product">
