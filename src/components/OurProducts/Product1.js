@@ -13,15 +13,17 @@ import {
   MImage,
   MInfoContainer,
   MProductHeadingText,
-  MKnowMoreButton
+  MKnowMoreButton,
+  DummyProductContainer
 } from "./style";
 import Traffic from "../../assets/Traffic.png";
+import IntegratedSecurity from '../../assets/Integrated_Security.png';
 
 const Product1 = () => {
   return (
     <>
     <ProductContainer>
-      <Image src={Traffic} />
+      <Image src={IntegratedSecurity} />
       <InfoContainer>
         <ProductHeadingText>
           AI Driven Integrated Security Platform
