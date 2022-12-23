@@ -35,12 +35,12 @@ const Address = () => {
         <HRDepartement>
           <SubHeading>HR Department</SubHeading>
           <ContactText>hr@beltech.ai</ContactText>
-          <ContactText>+91 -9845102222</ContactText>
+          <ContactText>+91-9686718809</ContactText>
         </HRDepartement>
         <SalesContainer>
             <SubHeading>Sales:</SubHeading>
             <ContactText>sales@beltech.ai</ContactText>
-            <ContactText>+91 -9845102222</ContactText>
+            <ContactText>+91-9874513456</ContactText>
         </SalesContainer>
         <GeneralContainer>
           <SubHeading>General:</SubHeading>
