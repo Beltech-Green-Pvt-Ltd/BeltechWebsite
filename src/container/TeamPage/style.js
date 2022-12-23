@@ -199,7 +199,7 @@ export const AdvisoryTeamCard = styled.div`
 
 export const AdvisoryTeamImage = styled.img`
   width: 230px;
-  height: 300px;
+  height: 270px;
   position: relative;
   left: 20px;
   bottom: 70px;
