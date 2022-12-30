@@ -41,7 +41,6 @@ export const Card = styled.div`
     background-image: url(${props => props.image});
     width: 334px;
     height: 186px;
-    background-color: red;
     position: relative;
     background-size: cover;
     margin-bottom: 100px;
